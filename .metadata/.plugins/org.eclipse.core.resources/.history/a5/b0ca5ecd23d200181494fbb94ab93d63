@@ -1,0 +1,19 @@
+
+public class FirstJavaProgram {
+	
+	public static void firstMethod(){
+		int number = 12345;
+		String city = "newyork";
+		
+		System.out.println(number);
+		System.out.println(city);
+		
+	}
+
+	public static void main(String[] args) {
+		FirstJavaProgram.firstMethod();
+	
+
+	}
+
+}
