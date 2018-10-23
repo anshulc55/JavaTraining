@@ -53,3 +53,16 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+
+# file to ignore if you want to use git to track your eclipse workspace metadata directory. 
+
+.mylyn/.taskListIndex/
+*.log
+.plugins/org.eclipse.m2e.core/nexus/
+*.swp
+.mylyn/*
+.plugins/org.eclipse.core.resources/.root/*.tree
+.markers
+.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs
+.plugins/org.eclipse.ui.workbench/workingsets.xml
+.plugins/org.eclipse.team.cvs.core
