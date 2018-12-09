@@ -1,0 +1,17 @@
+package String;
+
+public class StringIntro {
+
+	public static void main(String[] args) {
+		
+		String name = "Anshul Chauhan";
+		
+		String country = new String("United State");
+		
+		System.out.println(name);
+		
+		System.out.println(country);
+
+	}
+
+}

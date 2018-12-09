@@ -6,4 +6,22 @@
 <fullyQualifiedTypeName name="Students"/>
 <fullyQualifiedTypeName name="CounterClass"/>
 <fullyQualifiedTypeName name="StudentDemo"/>
+<fullyQualifiedTypeName name="Oops.Car"/>
+<fullyQualifiedTypeName name="Oops.Addition"/>
+<fullyQualifiedTypeName name="Oops.Bank"/>
+<fullyQualifiedTypeName name="Oops.AmericanExpress"/>
+<fullyQualifiedTypeName name="Oops.BankOfAmerica"/>
+<fullyQualifiedTypeName name="Oops.ICICIBank"/>
+<fullyQualifiedTypeName name="Oops.BMW"/>
+<fullyQualifiedTypeName name="Oops.Circle"/>
+<fullyQualifiedTypeName name="Oops.Shape"/>
+<fullyQualifiedTypeName name="Oops.Triagle"/>
+<fullyQualifiedTypeName name="Oops.Student"/>
+<fullyQualifiedTypeName name="Oops.EngineeringClass"/>
+<fullyQualifiedTypeName name="Oops.MedicalClass"/>
+<fullyQualifiedTypeName name="Oops.ParentStudent"/>
+<fullyQualifiedTypeName name="Oops.BankLoan"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="Array.PassArrayToMethod"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,13 @@
+package String;
+
+public class StringMethodPartI {
+
+	
+	public static void main(String[] args) {
+		
+		String text = "Learning is the Key";
+		
+		System.out.println(text.charAt(5));
+		
+	}
+}

@@ -1,0 +1,15 @@
+package String;
+
+public class StringMethodPartIII {
+
+	public static void main(String[] args) {
+		
+		String text = "Hello Team";
+		
+		String text1 = text.replace("e", "a");
+		
+		System.out.println(text1);
+
+	}
+
+}

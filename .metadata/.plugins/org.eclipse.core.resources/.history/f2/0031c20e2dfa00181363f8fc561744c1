@@ -1,0 +1,21 @@
+package String;
+
+public class StringMethodPartI {
+
+	
+	public static void main(String[] args) {
+		
+		String text = "Learning is the Key";
+		
+		/*char ch = text.charAt(12);
+		
+		System.out.println(text.charAt(5));
+		System.out.println(ch);
+		
+		System.out.println(text.charAt(50));*/
+		
+		String text2 = text.concat(" to sucess");
+		System.out.println(text2);
+		
+	}
+}
