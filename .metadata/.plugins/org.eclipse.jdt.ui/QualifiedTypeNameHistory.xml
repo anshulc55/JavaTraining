@@ -28,16 +28,21 @@
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
-<fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFWorkbook"/>
-<fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFSheet"/>
 <fullyQualifiedTypeName name="java.util.TreeMap"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="org.apache.poi.sl.usermodel.Sheet"/>
-<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Row"/>
-<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Cell"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Workbook"/>
+<fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFWorkbook"/>
+<fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFSheet"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="org.apache.commons.collections4.functors.SwitchClosure"/>
+<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Row"/>
+<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Cell"/>
+<fullyQualifiedTypeName name="java.util.Formatter"/>
+<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.DataFormatter"/>
 </qualifiedTypeNameHistroy>
