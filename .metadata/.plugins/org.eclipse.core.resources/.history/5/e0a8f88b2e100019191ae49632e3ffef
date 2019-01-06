@@ -1,0 +1,15 @@
+package com.testng.dataprovider;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class TestParameterExample {
+	
+	@Test
+	public void testAddition(int actual, int expected){
+		int actualValue = actual + 20;
+		
+		Assert.assertEquals(actualValue, expected);
+	}
+
+}

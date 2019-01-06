@@ -1,0 +1,19 @@
+package com.testng.training;
+
+import org.testng.annotations.Test;
+
+public class TestParameters {
+	
+	@Test
+	public void testCaseOne() {
+		System.out.println("browser passed as :- " + "Chrome");
+	}
+
+	
+	@Test
+	public void testCaseTwo() {
+		System.out.println("Parameter for User Name passed as :- " + "TestUser");
+		System.out.println("Parameter for Password passed as :- " + "TestUserPassword");
+	}
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Listener Suite]">
+  <listeners>
+    <listener class-name="com.testng.listeners.DemoListeners"/>
+  </listeners>
+  <test thread-count="5" name="Listener Test Case(failed)">
+    <classes>
+      <class name="com.testng.listeners.SampleTestClass">
+        <methods>
+          <include name="testFour"/>
+          <include name="testThree"/>
+        </methods>
+      </class> <!-- com.testng.listeners.SampleTestClass -->
+    </classes>
+  </test> <!-- Listener Test Case(failed) -->
+</suite> <!-- Failed suite [TestNG Listener Suite] -->
