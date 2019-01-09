@@ -49,7 +49,15 @@
 <fullyQualifiedTypeName name="org.testng.annotations.AfterSuite"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeSuite"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Parameters"/>
+<fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
+<fullyQualifiedTypeName name="com.testng.dataprovider.DataProviderSource"/>
+<fullyQualifiedTypeName name="org.testng.ITestListener"/>
+<fullyQualifiedTypeName name="java.nio.channels.AsynchronousServerSocketChannel"/>
 <fullyQualifiedTypeName name="org.testng.SkipException"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
