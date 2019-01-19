@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Verify FaceBook HomePage">
+
+	<parameter name="browser" value="IE"></parameter>
+	
+	<test name="FaceBook HomePage Test">
+		<classes>
+			<class name="com.selenuim.basic.InvokeBrowserDynamically"></class>
+		</classes>
+	
+	</test>
+
+</suite> <!-- Suite -->

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5848" started-at="2019-01-08T17:58:26Z" finished-at="2019-01-08T17:58:32Z">
+  <suite name="Default suite" duration-ms="19354" started-at="2019-01-19T13:08:54Z" finished-at="2019-01-19T13:09:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5848" started-at="2019-01-08T17:58:26Z" finished-at="2019-01-08T17:58:32Z">
-      <class name="com.selenuim.basic.FirstSeleniumTest">
-        <test-method status="PASS" signature="verifyFaceBookHomePage()[pri:0, instance:com.selenuim.basic.FirstSeleniumTest@20e2cbe0]" name="verifyFaceBookHomePage" duration-ms="5777" started-at="2019-01-08T17:58:26Z" finished-at="2019-01-08T17:58:32Z">
+    <test name="Default test" duration-ms="19354" started-at="2019-01-19T13:08:54Z" finished-at="2019-01-19T13:09:13Z">
+      <class name="com.selenium.webelement.FindElementsClass">
+        <test-method status="PASS" signature="findElementTest()[pri:0, instance:com.selenium.webelement.FindElementsClass@20e2cbe0]" name="findElementTest" duration-ms="19244" started-at="2019-01-19T13:08:54Z" finished-at="2019-01-19T13:09:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFaceBookHomePage -->
-      </class> <!-- com.selenuim.basic.FirstSeleniumTest -->
+        </test-method> <!-- findElementTest -->
+      </class> <!-- com.selenium.webelement.FindElementsClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

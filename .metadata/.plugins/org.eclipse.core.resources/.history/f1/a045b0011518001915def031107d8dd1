@@ -1,0 +1,21 @@
+package com.selenuim.basic;
+
+import org.testng.annotations.Test;
+
+public class OptionsClassSelenium {
+	
+	@Test
+	public void sampleOptionsSetBinary(){
+		
+		//open Specific Version of Chrome
+		System.setProperty("webdriver.chrome.driver", "D:\\PATH\\chromedriver.exe");
+		ChromeOptions co = new ChromeOptions();
+		// set the binary path
+		co.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\version45\\chrome.exe");
+		//open the browser
+		WebDriver driver = new ChromeDriver(co);
+		driver.get("https://google.com");
+
+	}
+
+}

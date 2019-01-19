@@ -3,7 +3,11 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="/Users/anshul/FrameworkUtils/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
-	<classpathentry kind="lib" path="/Users/anshul/FrameworkUtils/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="/Users/anshul/FrameworkUtils/selenium-java-3.141.59/client-combined-3.141.59.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="https://seleniumhq.github.io/selenium/docs/api/java/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="/Users/anshul/FrameworkUtils/selenium-java-3.141.59/libs/byte-buddy-1.8.15.jar"/>
 	<classpathentry kind="lib" path="/Users/anshul/FrameworkUtils/selenium-java-3.141.59/libs/commons-exec-1.3.jar"/>
 	<classpathentry kind="lib" path="/Users/anshul/FrameworkUtils/selenium-java-3.141.59/libs/guava-25.0-jre.jar"/>

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenuim.basic.FirstSeleniumTest">
+      <class name="com.selenium.webelement.FindElementClass">
         <methods>
-          <include name="verifyFaceBookHomePage"/>
+          <include name="findElementTest"/>
         </methods>
-      </class> <!-- com.selenuim.basic.FirstSeleniumTest -->
+      </class> <!-- com.selenium.webelement.FindElementClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

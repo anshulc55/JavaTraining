@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="FirstJavaProgram"/>
-<fullyQualifiedTypeName name="Dog"/>
-<fullyQualifiedTypeName name="Students"/>
-<fullyQualifiedTypeName name="CounterClass"/>
-<fullyQualifiedTypeName name="StudentDemo"/>
-<fullyQualifiedTypeName name="Oops.Car"/>
-<fullyQualifiedTypeName name="Oops.Addition"/>
-<fullyQualifiedTypeName name="Oops.Bank"/>
-<fullyQualifiedTypeName name="Oops.AmericanExpress"/>
-<fullyQualifiedTypeName name="Oops.BankOfAmerica"/>
-<fullyQualifiedTypeName name="Oops.ICICIBank"/>
-<fullyQualifiedTypeName name="Oops.BMW"/>
-<fullyQualifiedTypeName name="Oops.Circle"/>
 <fullyQualifiedTypeName name="Oops.Shape"/>
 <fullyQualifiedTypeName name="Oops.Triagle"/>
 <fullyQualifiedTypeName name="Oops.Student"/>
@@ -49,15 +36,28 @@
 <fullyQualifiedTypeName name="org.testng.annotations.AfterSuite"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeSuite"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Parameters"/>
-<fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
 <fullyQualifiedTypeName name="com.testng.dataprovider.DataProviderSource"/>
 <fullyQualifiedTypeName name="org.testng.ITestListener"/>
 <fullyQualifiedTypeName name="java.nio.channels.AsynchronousServerSocketChannel"/>
 <fullyQualifiedTypeName name="org.testng.SkipException"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-<fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Parameters"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
+<fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
+<fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxOptions"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.Proxy"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeOptions"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.UnexpectedAlertBehaviour"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.PageLoadStrategy"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 </qualifiedTypeNameHistroy>
