@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="Oops.Shape"/>
-<fullyQualifiedTypeName name="Oops.Triagle"/>
-<fullyQualifiedTypeName name="Oops.Student"/>
-<fullyQualifiedTypeName name="Oops.EngineeringClass"/>
-<fullyQualifiedTypeName name="Oops.MedicalClass"/>
-<fullyQualifiedTypeName name="Oops.ParentStudent"/>
-<fullyQualifiedTypeName name="Oops.BankLoan"/>
-<fullyQualifiedTypeName name="Array.PassArrayToMethod"/>
-<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -44,20 +35,29 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Parameters"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
-<fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
-<fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
 <fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxOptions"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Proxy"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeOptions"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.UnexpectedAlertBehaviour"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.PageLoadStrategy"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.events.WebDriverEventListener"/>
+<fullyQualifiedTypeName name="java.security.SecureRandom"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
-<fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="java.net.HttpURLConnection"/>
+<fullyQualifiedTypeName name="com.selenium.masterpart1.GetLinkStatus"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
 </qualifiedTypeNameHistroy>

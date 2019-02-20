@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.webelement.FindElementClass">
+      <class name="com.selenium.masterpart1.VerifyWebElementPresence">
         <methods>
-          <include name="findElementTest"/>
+          <include name="verifySelect"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.selenium.webelement.FindElementClass -->
+      </class> <!-- com.selenium.masterpart1.VerifyWebElementPresence -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

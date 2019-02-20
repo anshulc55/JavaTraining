@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19354" started-at="2019-01-19T13:08:54Z" finished-at="2019-01-19T13:09:13Z">
+  <suite name="Default suite" duration-ms="16761" started-at="2019-02-20T15:21:27Z" finished-at="2019-02-20T15:21:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19354" started-at="2019-01-19T13:08:54Z" finished-at="2019-01-19T13:09:13Z">
-      <class name="com.selenium.webelement.FindElementsClass">
-        <test-method status="PASS" signature="findElementTest()[pri:0, instance:com.selenium.webelement.FindElementsClass@20e2cbe0]" name="findElementTest" duration-ms="19244" started-at="2019-01-19T13:08:54Z" finished-at="2019-01-19T13:09:13Z">
+    <test name="Default test" duration-ms="16761" started-at="2019-02-20T15:21:27Z" finished-at="2019-02-20T15:21:44Z">
+      <class name="com.selenium.masterpart1.ExtractSpecificElementOnWebPage">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.selenium.masterpart1.ExtractSpecificElementOnWebPage@4678c730]" name="openBrowser" is-config="true" duration-ms="15862" started-at="2019-02-20T15:21:27Z" finished-at="2019-02-20T15:21:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- findElementTest -->
-      </class> <!-- com.selenium.webelement.FindElementsClass -->
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="getElements()[pri:0, instance:com.selenium.masterpart1.ExtractSpecificElementOnWebPage@4678c730]" name="getElements" duration-ms="514" started-at="2019-02-20T15:21:43Z" finished-at="2019-02-20T15:21:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getElements -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.selenium.masterpart1.ExtractSpecificElementOnWebPage@4678c730]" name="closeBrowser" is-config="true" duration-ms="342" started-at="2019-02-20T15:21:43Z" finished-at="2019-02-20T15:21:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.selenium.masterpart1.ExtractSpecificElementOnWebPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
