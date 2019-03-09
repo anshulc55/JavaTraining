@@ -1,0 +1,31 @@
+package com.selenium.masterpart2;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+public class HandleMultipleWindows {
+	
+	@BeforeMethod
+	public void openBrowser(){
+		
+		System.setProperty("webdriver.chrome.driver",
+				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+		 driver = new ChromeDriver();
+
+		driver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select_multiple");
+		driver.manage().window().maximize();
+
+		// Apply Implicit wait
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+	}
+	
+	@AfterMethod
+	public void closeBrowser(){
+		driver.quit();
+	}
+
+}
