@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.masterpart3.ManageJavaScriptExecutor">
+      <class name="com.liveproject.LoginTest">
         <methods>
-          <include name="openBrowser"/>
           <include name="closeBrowser"/>
-          <include name="testJavaScriptExecutor"/>
+          <include name="loginRediff"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- com.selenium.masterpart3.ManageJavaScriptExecutor -->
+      </class> <!-- com.liveproject.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

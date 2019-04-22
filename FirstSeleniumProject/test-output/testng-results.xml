@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15795" started-at="2019-03-09T15:10:23Z" finished-at="2019-03-09T15:10:39Z">
+  <suite name="Default suite" duration-ms="24691" started-at="2019-04-21T13:47:42Z" finished-at="2019-04-21T13:48:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15795" started-at="2019-03-09T15:10:23Z" finished-at="2019-03-09T15:10:39Z">
-      <class name="com.selenium.masterpart3.ManageJavaScriptExecutor">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.selenium.masterpart3.ManageJavaScriptExecutor@4678c730]" name="openBrowser" is-config="true" duration-ms="2880" started-at="2019-03-09T15:10:23Z" finished-at="2019-03-09T15:10:26Z">
+    <test name="Default test" duration-ms="24691" started-at="2019-04-21T13:47:42Z" finished-at="2019-04-21T13:48:07Z">
+      <class name="com.liveproject.LoginTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.liveproject.LoginTest@4678c730]" name="openBrowser" is-config="true" duration-ms="2756" started-at="2019-04-21T13:47:42Z" finished-at="2019-04-21T13:47:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="testJavaScriptExecutor()[pri:0, instance:com.selenium.masterpart3.ManageJavaScriptExecutor@4678c730]" name="testJavaScriptExecutor" duration-ms="12640" started-at="2019-03-09T15:10:26Z" finished-at="2019-03-09T15:10:39Z">
+        <test-method status="PASS" signature="loginRediff()[pri:0, instance:com.liveproject.LoginTest@4678c730]" name="loginRediff" duration-ms="21682" started-at="2019-04-21T13:47:45Z" finished-at="2019-04-21T13:48:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testJavaScriptExecutor -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.selenium.masterpart3.ManageJavaScriptExecutor@4678c730]" name="closeBrowser" is-config="true" duration-ms="223" started-at="2019-03-09T15:10:39Z" finished-at="2019-03-09T15:10:39Z">
+        </test-method> <!-- loginRediff -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.liveproject.LoginTest@4678c730]" name="closeBrowser" is-config="true" duration-ms="209" started-at="2019-04-21T13:48:07Z" finished-at="2019-04-21T13:48:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.selenium.masterpart3.ManageJavaScriptExecutor -->
+      </class> <!-- com.liveproject.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
