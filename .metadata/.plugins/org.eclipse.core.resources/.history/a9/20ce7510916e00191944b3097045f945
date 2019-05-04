@@ -1,0 +1,27 @@
+package com.datadrivern.framework.base;
+
+public class BaseUI {
+	
+	public WebDriver driver;
+	
+	public void invokeBrowser(String browserName){
+		
+	}
+	
+	public void openURL(String websiteURL){
+		
+	}
+	
+	public void tearDown(){
+		
+	}
+	
+	public void quitBrowser(){
+		
+	}
+	
+	public void enterText(String xpath, String data){
+		
+	}
+
+}

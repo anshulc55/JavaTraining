@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="138981" started-at="2019-05-01T15:28:55Z" finished-at="2019-05-01T15:31:14Z">
+  <suite name="Default suite" duration-ms="46416" started-at="2019-05-04T02:27:27Z" finished-at="2019-05-04T02:28:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="138981" started-at="2019-05-01T15:28:55Z" finished-at="2019-05-01T15:31:14Z">
+    <test name="Default test" duration-ms="46416" started-at="2019-05-04T02:27:27Z" finished-at="2019-05-04T02:28:13Z">
       <class name="com.liveproject.AddDeleteStockInPortfolio">
-        <test-method status="PASS" signature="addStockTest()[pri:0, instance:com.liveproject.AddDeleteStockInPortfolio@20e2cbe0]" name="addStockTest" duration-ms="87480" started-at="2019-05-01T15:28:55Z" finished-at="2019-05-01T15:30:22Z">
+        <test-method status="PASS" signature="addStockTest()[pri:0, instance:com.liveproject.AddDeleteStockInPortfolio@20e2cbe0]" name="addStockTest" duration-ms="41975" started-at="2019-05-04T02:27:27Z" finished-at="2019-05-04T02:28:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addStockTest -->
-        <test-method status="PASS" signature="deleteStock()[pri:0, instance:com.liveproject.AddDeleteStockInPortfolio@20e2cbe0]" name="deleteStock" duration-ms="51449" started-at="2019-05-01T15:30:22Z" depends-on-methods="com.liveproject.AddDeleteStockInPortfolio.addStockTest" finished-at="2019-05-01T15:31:14Z">
+        <test-method status="PASS" signature="deleteStock()[pri:0, instance:com.liveproject.AddDeleteStockInPortfolio@20e2cbe0]" name="deleteStock" duration-ms="4394" started-at="2019-05-04T02:28:09Z" depends-on-methods="com.liveproject.AddDeleteStockInPortfolio.addStockTest" finished-at="2019-05-04T02:28:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteStock -->

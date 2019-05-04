@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;chromedriver&apos; to &apos;DataDrivenFramework/src/test/resources/drivers&apos;&#x0A;- Original project: &apos;FirstSeleniumProject&apos;&#x0A;- Destination element: &apos;DataDrivenFramework/src/test/resources/drivers&apos;&#x0A;- Original element: &apos;chromedriver&apos;" description="Copy file" destination="=DataDrivenFramework/src\/test\/resources&lt;drivers" element1="drivers/chromedriver" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1556991578196" units="0" version="1.0"/>
+</session>

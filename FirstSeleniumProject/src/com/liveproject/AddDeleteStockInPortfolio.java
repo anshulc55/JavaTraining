@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -52,6 +53,8 @@ public class AddDeleteStockInPortfolio {
 		WebElement dropdown = driver.findElement(By.id("portfolioid"));
 		Select select = new Select(dropdown);
 		select.selectByVisibleText("Test1");
+		
+		waitForPageLoad();
 
 		// Add Stock
 		driver.findElement(By.id("addStock")).click();
@@ -71,12 +74,7 @@ public class AddDeleteStockInPortfolio {
 
 		driver.findElement(By.id("addStockButton")).click();
 		
-		try {
-			Thread.sleep(50000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		waitForPageLoad();
 
 		// Verify Stock
 		// String stockName =
@@ -84,31 +82,26 @@ public class AddDeleteStockInPortfolio {
 		// Assert.assertEquals(stockName, "Nestle India");
 
 		int stockRowNum = getStockRowNumber("Nestle India");
-		
+
 		System.out.println("Row number is : " + stockRowNum);
-		if(stockRowNum==-1){
+		if (stockRowNum == -1) {
 			Assert.fail("Stock not Found");
 		}
 
 	}
-	
-	@Test(dependsOnMethods="addStockTest")
-	public void deleteStock(){
-		
+
+	@Test(dependsOnMethods = "addStockTest")
+	public void deleteStock() {
+
 		int stockRowNum = getStockRowNumber("Nestle India");
-		driver.findElement(By.xpath("//table[@id='stock']/tbody/tr["+stockRowNum+"]/td[1]")).click();
-		driver.findElements(By.xpath("//input[@name='Delete']")).get(stockRowNum-1).click();
-		
+		driver.findElement(By.xpath("//table[@id='stock']/tbody/tr[" + stockRowNum + "]/td[1]")).click();
+		driver.findElements(By.xpath("//input[@name='Delete']")).get(stockRowNum - 1).click();
+
 		driver.switchTo().alert().accept();
 		driver.switchTo().defaultContent();
-		
-		try {
-			Thread.sleep(50000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+
+		waitForPageLoad();
+
 		int stockRowNumAfterDelete = getStockRowNumber("Nestle India");
 		Assert.assertEquals(stockRowNumAfterDelete, -1, "Row is Deleted");
 	}
@@ -132,7 +125,42 @@ public class AddDeleteStockInPortfolio {
 			}
 
 		}
-			return -1;
+		return -1;
+	}
+
+	public void waitForPageLoad() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+		int i = 0;
+		while (i != 180) {
+			String pageState = (String) js.executeScript("return document.readyState;");
+			if (pageState.equals("complete")) {
+				break;
+			} else {
+				waitLoad(1);
+			}
+		}
+
+		waitLoad(2);
+
+		i = 0;
+		while (i != 180) {
+			Boolean jsState = (Boolean) js.executeScript("return window.jQuery != undefined && jQuery.active == 0;");
+			if (jsState) {
+				break;
+			} else {
+				waitLoad(1);
+			}
+		}
+	}
+
+	public void waitLoad(int i) {
+		try {
+			Thread.sleep(i * 1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public void selectDateIncalendar(String date) {

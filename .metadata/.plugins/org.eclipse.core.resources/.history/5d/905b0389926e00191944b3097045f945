@@ -1,0 +1,22 @@
+package com.daradriver.framework.test.LoginTest;
+
+import org.testng.annotations.Test;
+
+public class loginTest {
+	
+	@Test
+	public void testOne(){
+		
+	}
+	
+	@Test
+	public void testTwo(){
+		
+	}
+	
+	@Test
+	public void testThree(){
+		
+	}
+
+}

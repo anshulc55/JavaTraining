@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.daradriver.framework.test.LoginTest.loginTest">
+        <methods>
+          <include name="testTwo"/>
+          <include name="testOne"/>
+          <include name="testThree"/>
+        </methods>
+      </class> <!-- com.daradriver.framework.test.LoginTest.loginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
