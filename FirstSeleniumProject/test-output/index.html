@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.liveproject.LoginTest" hash-for-method="loginRediff">loginRediff</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.liveproject.AddDeleteStockInPortfolio" hash-for-method="addStockTest">addStockTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.liveproject.AddDeleteStockInPortfolio" hash-for-method="deleteStock">deleteStock</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +125,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.liveproject.LoginTest</span>
+              <span class="class-name">com.liveproject.AddDeleteStockInPortfolio</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginRediff">
-                  </a> <!-- loginRediff -->
-                  <span class="method-name">loginRediff</span>
+                  <a name="addStockTest">
+                  </a> <!-- addStockTest -->
+                  <span class="method-name">addStockTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteStock">
+                  </a> <!-- deleteStock -->
+                  <span class="method-name">deleteStock</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +147,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/g2/v_wztjz968b86xr6l_29g_qc0000gn/T/testng-eclipse--1129276648/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/g2/v_wztjz968b86xr6l_29g_qc0000gn/T/testng-eclipse--1183403380/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +156,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.liveproject.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.liveproject.AddDeleteStockInPortfolio&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,16 +196,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginRediff')
-data.setCell(0, 2, 'com.liveproject.LoginTest')
-data.setCell(0, 3, 21682);
+data.setCell(0, 1, 'addStockTest')
+data.setCell(0, 2, 'com.liveproject.AddDeleteStockInPortfolio')
+data.setCell(0, 3, 87480);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'deleteStock')
+data.setCell(1, 2, 'com.liveproject.AddDeleteStockInPortfolio')
+data.setCell(1, 3, 51449);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -219,19 +235,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.liveproject.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">com.liveproject.AddDeleteStockInPortfolio</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">loginRediff</span>
-                <span class="method-start">2756 ms</span>
+                <span class="method-name">addStockTest</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">24441 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">deleteStock</span>
+                <span class="method-start">87486 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24691" started-at="2019-04-21T13:47:42Z" finished-at="2019-04-21T13:48:07Z">
+  <suite name="Default suite" duration-ms="138981" started-at="2019-05-01T15:28:55Z" finished-at="2019-05-01T15:31:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24691" started-at="2019-04-21T13:47:42Z" finished-at="2019-04-21T13:48:07Z">
-      <class name="com.liveproject.LoginTest">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.liveproject.LoginTest@4678c730]" name="openBrowser" is-config="true" duration-ms="2756" started-at="2019-04-21T13:47:42Z" finished-at="2019-04-21T13:47:45Z">
+    <test name="Default test" duration-ms="138981" started-at="2019-05-01T15:28:55Z" finished-at="2019-05-01T15:31:14Z">
+      <class name="com.liveproject.AddDeleteStockInPortfolio">
+        <test-method status="PASS" signature="addStockTest()[pri:0, instance:com.liveproject.AddDeleteStockInPortfolio@20e2cbe0]" name="addStockTest" duration-ms="87480" started-at="2019-05-01T15:28:55Z" finished-at="2019-05-01T15:30:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="loginRediff()[pri:0, instance:com.liveproject.LoginTest@4678c730]" name="loginRediff" duration-ms="21682" started-at="2019-04-21T13:47:45Z" finished-at="2019-04-21T13:48:07Z">
+        </test-method> <!-- addStockTest -->
+        <test-method status="PASS" signature="deleteStock()[pri:0, instance:com.liveproject.AddDeleteStockInPortfolio@20e2cbe0]" name="deleteStock" duration-ms="51449" started-at="2019-05-01T15:30:22Z" depends-on-methods="com.liveproject.AddDeleteStockInPortfolio.addStockTest" finished-at="2019-05-01T15:31:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginRediff -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.liveproject.LoginTest@4678c730]" name="closeBrowser" is-config="true" duration-ms="209" started-at="2019-04-21T13:48:07Z" finished-at="2019-04-21T13:48:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.liveproject.LoginTest -->
+        </test-method> <!-- deleteStock -->
+      </class> <!-- com.liveproject.AddDeleteStockInPortfolio -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

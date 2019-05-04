@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.liveproject.LoginTest">
+      <class name="com.liveproject.AddDeleteStockInPortfolio">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="loginRediff"/>
-          <include name="openBrowser"/>
+          <include name="addStockTest"/>
+          <include name="deleteStock"/>
         </methods>
-      </class> <!-- com.liveproject.LoginTest -->
+      </class> <!-- com.liveproject.AddDeleteStockInPortfolio -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

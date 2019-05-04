@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Live Project Automation : RediffMail]">
+  <test thread-count="5" name="Rediff PortFolio Test(failed)">
+    <classes>
+      <class name="com.liveproject.CreatePortfolio">
+        <methods>
+          <include name="testCreatePortfolio"/>
+          <include name="openBrowser"/>
+          <include name="testportfolioVerification"/>
+          <include name="testDeletePortfolio"/>
+        </methods>
+      </class> <!-- com.liveproject.CreatePortfolio -->
+    </classes>
+  </test> <!-- Rediff PortFolio Test(failed) -->
+</suite> <!-- Failed suite [Live Project Automation : RediffMail] -->
