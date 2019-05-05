@@ -1,0 +1,39 @@
+package com.daradriver.framework.test.LoginTest;
+
+import org.testng.annotations.Test;
+
+import com.datadrivern.framework.base.BaseUI;
+
+public class loginTest extends BaseUI {
+	
+	@Test
+	public void testOne(){
+		
+		invokeBrowser("Chrome");
+		openURL("https://www.rediff.com/");
+		elementClick("//*[@id='signin_info']/a[1]");
+		enterText("//*[@id='login1']", "anshulc55");
+		tearDown();
+	}
+	
+	@Test (dependsOnMethods="testOne")
+	public void testTwo(){
+		invokeBrowser("Chrome");
+		openURL("https://www.rediff.com/");
+		elementClick("//*[@id='signin_info']/a[1]");
+		enterText("//*[@id='login1']", "anshulc55");
+		tearDown();
+		
+	}
+	
+	@Test(dependsOnMethods="testTwo")
+	public void testThree(){
+		invokeBrowser("Chrome");
+		openURL("https://www.rediff.com/");
+		elementClick("//*[@id='signin_info']/a[1]");
+		enterText("//*[@id='login1']", "anshulc55");
+		tearDown();
+		
+	}
+
+}

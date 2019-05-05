@@ -65,8 +65,8 @@ public class BaseUI {
 
 	}
 
-	public void openURL(String websiteURLKey) {
-		driver.get(prop.getProperty(websiteURLKey));
+	public void openURL(String websiteURL) {
+		driver.get(websiteURL);
 
 	}
 
@@ -80,12 +80,12 @@ public class BaseUI {
 
 	}
 
-	public void enterText(String xpathKey, String data) {
-		driver.findElement(By.xpath(prop.getProperty(xpathKey))).sendKeys(data);
+	public void enterText(String xpath, String data) {
+		driver.findElement(By.xpath(xpath)).sendKeys(data);
 	}
 
-	public void elementClick(String xpathKey) {
-		driver.findElement(By.xpath(prop.getProperty(xpathKey))).click();
+	public void elementClick(String xpath) {
+		driver.findElement(By.xpath(xpath)).click();
 	}
 
 }

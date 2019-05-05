@@ -20,53 +20,51 @@ public class BaseUI {
 	public void invokeBrowser(String browserName) {
 
 		if (browserName.equalsIgnoreCase("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +
-					"/src/test/resources/drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver",
+					"/Users/anshul/Trainings/JavaProjectTraining/DataDrivenFramework/src/test/resources/drivers/chromedriver");
 			driver = new ChromeDriver();
 		} else if (browserName.equalsIgnoreCase("Mozila")) {
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +
-					"/src/test/resources/drivers/geckodriver");
+			System.setProperty("webdriver.gecko.driver",
+					"/Users/anshul/Trainings/JavaProjectTraining/DataDrivenFramework/src/test/resources/drivers/geckodriver");
 			driver = new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("Opera")) {
-			System.setProperty("webdriver.opera.driver", System.getProperty("user.dir") +
-					"/src/test/resources/drivers/operadriver");
+			System.setProperty("webdriver.opera.driver",
+					"/Users/anshul/Trainings/JavaProjectTraining/DataDrivenFramework/src/test/resources/drivers/operadriver");
 			driver = new OperaDriver();
 		} else if (browserName.equalsIgnoreCase("IE")) {
-			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") +
-					"/src/test/resources/drivers/IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver",
+					"/Users/anshul/Trainings/JavaProjectTraining/DataDrivenFramework/src/test/resources/drivers/IEDriverServer.exe");
 			driver = new OperaDriver();
 		} else {
 			driver = new SafariDriver();
 		}
-
+		
 		driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(180, TimeUnit.SECONDS);
-
-		// System.out.println(System.getProperty("user.dir"));
-
-		if (prop == null) {
+		
+		//System.out.println(System.getProperty("user.dir"));
+		
+		if(prop==null){
 			prop = new Properties();
-
-			// Mac
+			
+			//Mac
 			try {
-				FileInputStream file = new FileInputStream(System.getProperty("user.dir")
-						+ "/src/test/resources/ObjectRepository/projectConfig.properties");
+				FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"/src/test/resources/ObjectRepository/projectConfig.properties");
 				prop.load(file);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
-			// Windows
-			// FileInputStream file = new
-			// FileInputStream(System.getProperty("user.dir")+"//src/test//resources//ObjectRepository//projectConfig.properties");
+			
+			//Windows
+			//FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"//src/test//resources//ObjectRepository//projectConfig.properties");
 		}
 
 	}
 
-	public void openURL(String websiteURLKey) {
-		driver.get(prop.getProperty(websiteURLKey));
+	public void openURL(String websiteURL) {
+		driver.get(websiteURL);
 
 	}
 
@@ -80,12 +78,12 @@ public class BaseUI {
 
 	}
 
-	public void enterText(String xpathKey, String data) {
-		driver.findElement(By.xpath(prop.getProperty(xpathKey))).sendKeys(data);
+	public void enterText(String xpath, String data) {
+		driver.findElement(By.xpath(xpath)).sendKeys(data);
 	}
-
-	public void elementClick(String xpathKey) {
-		driver.findElement(By.xpath(prop.getProperty(xpathKey))).click();
+	
+	public void elementClick(String xpath){
+		driver.findElement(By.xpath(xpath)).click();
 	}
 
 }

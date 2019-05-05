@@ -18,7 +18,7 @@ public class loginTest extends BaseUI {
 	
 	@Test (dependsOnMethods="testOne")
 	public void testTwo(){
-		invokeBrowser("safari");
+		invokeBrowser("Chrome");
 		openURL("websiteURL");
 		elementClick("singinBtn_xpath");
 		enterText("usrnameTextbox_Xpath", "anshulc55");
@@ -28,7 +28,7 @@ public class loginTest extends BaseUI {
 	
 	@Test(dependsOnMethods="testTwo")
 	public void testThree(){
-		invokeBrowser("Mozila");
+		invokeBrowser("Chrome");
 		openURL("websiteURL");
 		elementClick("singinBtn_xpath");
 		enterText("usrnameTextbox_Xpath", "anshulc55");

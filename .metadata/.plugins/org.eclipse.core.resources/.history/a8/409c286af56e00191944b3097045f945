@@ -28,7 +28,7 @@ public class loginTest extends BaseUI {
 	
 	@Test(dependsOnMethods="testTwo")
 	public void testThree(){
-		invokeBrowser("Mozila");
+		invokeBrowser("mozila");
 		openURL("websiteURL");
 		elementClick("singinBtn_xpath");
 		enterText("usrnameTextbox_Xpath", "anshulc55");

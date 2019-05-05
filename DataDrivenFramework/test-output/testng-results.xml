@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37797" started-at="2019-05-04T17:41:43Z" finished-at="2019-05-04T17:42:21Z">
+  <suite name="Default suite" duration-ms="62636" started-at="2019-05-05T05:30:55Z" finished-at="2019-05-05T05:31:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37797" started-at="2019-05-04T17:41:43Z" finished-at="2019-05-04T17:42:21Z">
+    <test name="Default test" duration-ms="62636" started-at="2019-05-05T05:30:55Z" finished-at="2019-05-05T05:31:58Z">
       <class name="com.daradriver.framework.test.LoginTest.loginTest">
-        <test-method status="PASS" signature="testOne()[pri:0, instance:com.daradriver.framework.test.LoginTest.loginTest@523884b2]" name="testOne" duration-ms="11758" started-at="2019-05-04T17:41:43Z" finished-at="2019-05-04T17:41:55Z">
+        <test-method status="PASS" signature="testOne()[pri:0, instance:com.daradriver.framework.test.LoginTest.loginTest@523884b2]" name="testOne" duration-ms="20600" started-at="2019-05-05T05:30:55Z" finished-at="2019-05-05T05:31:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOne -->
-        <test-method status="PASS" signature="testTwo()[pri:0, instance:com.daradriver.framework.test.LoginTest.loginTest@523884b2]" name="testTwo" duration-ms="14726" started-at="2019-05-04T17:41:55Z" depends-on-methods="com.daradriver.framework.test.LoginTest.loginTest.testOne" finished-at="2019-05-04T17:42:09Z">
+        <test-method status="PASS" signature="testTwo()[pri:0, instance:com.daradriver.framework.test.LoginTest.loginTest@523884b2]" name="testTwo" duration-ms="18260" started-at="2019-05-05T05:31:16Z" depends-on-methods="com.daradriver.framework.test.LoginTest.loginTest.testOne" finished-at="2019-05-05T05:31:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTwo -->
-        <test-method status="PASS" signature="testThree()[pri:0, instance:com.daradriver.framework.test.LoginTest.loginTest@523884b2]" name="testThree" duration-ms="11248" started-at="2019-05-04T17:42:09Z" depends-on-methods="com.daradriver.framework.test.LoginTest.loginTest.testTwo" finished-at="2019-05-04T17:42:21Z">
+        <test-method status="PASS" signature="testThree()[pri:0, instance:com.daradriver.framework.test.LoginTest.loginTest@523884b2]" name="testThree" duration-ms="23715" started-at="2019-05-05T05:31:34Z" depends-on-methods="com.daradriver.framework.test.LoginTest.loginTest.testTwo" finished-at="2019-05-05T05:31:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testThree -->
