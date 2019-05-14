@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFSheet"/>
-<fullyQualifiedTypeName name="org.apache.commons.collections4.functors.SwitchClosure"/>
-<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Row"/>
-<fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Cell"/>
-<fullyQualifiedTypeName name="java.util.Formatter"/>
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.DataFormatter"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterSuite"/>
@@ -13,10 +8,8 @@
 <fullyQualifiedTypeName name="org.testng.ITestListener"/>
 <fullyQualifiedTypeName name="java.nio.channels.AsynchronousServerSocketChannel"/>
 <fullyQualifiedTypeName name="org.testng.SkipException"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Parameters"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
 <fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxOptions"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Proxy"/>
@@ -25,7 +18,6 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.PageLoadStrategy"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.events.WebDriverEventListener"/>
 <fullyQualifiedTypeName name="java.security.SecureRandom"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
 <fullyQualifiedTypeName name="java.net.URL"/>
 <fullyQualifiedTypeName name="java.net.HttpURLConnection"/>
@@ -36,28 +28,36 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
 <fullyQualifiedTypeName name="net.bytebuddy.dynamic.scaffold.InstrumentedType.Frozen"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="com.selenium.masterpart3.UploadFileSelenium"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
 <fullyQualifiedTypeName name="javax.crypto.SealedObject"/>
 <fullyQualifiedTypeName name="java.lang.AssertionError"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeSuite"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-<fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.GeckoDriverInfo"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.safari.SafariDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="com.datadrivern.framework.base.BaseUI"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
 </qualifiedTypeNameHistroy>

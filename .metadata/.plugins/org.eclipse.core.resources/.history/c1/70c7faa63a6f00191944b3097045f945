@@ -1,0 +1,138 @@
+package com.datadrivern.framework.base;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.safari.SafariDriver;
+
+public class BaseUI {
+
+	public WebDriver driver;
+	public Properties prop;
+
+	//Invoke the Browser
+	public void invokeBrowser(String browserName) {
+
+		if (browserName.equalsIgnoreCase("Chrome")) {
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +
+					"/src/test/resources/drivers/chromedriver");
+			driver = new ChromeDriver();
+		} else if (browserName.equalsIgnoreCase("Mozila")) {
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +
+					"/src/test/resources/drivers/geckodriver");
+			driver = new FirefoxDriver();
+		} else if (browserName.equalsIgnoreCase("Opera")) {
+			System.setProperty("webdriver.opera.driver", System.getProperty("user.dir") +
+					"/src/test/resources/drivers/operadriver");
+			driver = new OperaDriver();
+		} else if (browserName.equalsIgnoreCase("IE")) {
+			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") +
+					"/src/test/resources/drivers/IEDriverServer.exe");
+			driver = new OperaDriver();
+		} else {
+			driver = new SafariDriver();
+		}
+
+		driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(180, TimeUnit.SECONDS);
+
+		// System.out.println(System.getProperty("user.dir"));
+
+		if (prop == null) {
+			prop = new Properties();
+
+			// Mac
+			try {
+				FileInputStream file = new FileInputStream(System.getProperty("user.dir")
+						+ "/src/test/resources/ObjectRepository/projectConfig.properties");
+				prop.load(file);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			// Windows
+			// FileInputStream file = new
+			// FileInputStream(System.getProperty("user.dir")+"//src/test//resources//ObjectRepository//projectConfig.properties");
+		}
+
+	}
+
+	//Open the WebSite URL
+	public void openURL(String websiteURLKey) {
+		driver.get(prop.getProperty(websiteURLKey));
+
+	}
+
+	//To close the Browser Intance
+	public void tearDown() {
+		driver.close();
+
+	}
+
+	//To Quit the Broswer Instance
+	public void quitBrowser() {
+		driver.quit();
+
+	}
+
+	//Enter the Text in Text Fields
+	public void enterText(String xpathKey, String data) {
+		getElement(xpathKey).sendKeys(data);
+	}
+
+	//To Click the Element
+	public void elementClick(String xpathKey) {
+		getElement(xpathKey).click();
+	}
+	
+	public WebElement getElement(String locatorKey){
+		WebElement element =null;
+		
+		if(locatorKey.endsWith("_Id")){
+			element = driver.findElement(By.id(prop.getProperty(locatorKey)));
+		} else if (locatorKey.endsWith("_Xpath")) {
+			element = driver.findElement(By.xpath(prop.getProperty(locatorKey)));
+		} else if (locatorKey.endsWith("_CSS")) {
+			element = driver.findElement(By.cssSelector(prop.getProperty(locatorKey)));
+		} else if (locatorKey.endsWith("_LinkText")) {
+			element = driver.findElement(By.linkText(prop.getProperty(locatorKey)));
+		} else if (locatorKey.endsWith("_PartialLinkText")) {
+			element = driver.findElement(By.partialLinkText(prop.getProperty(locatorKey)));
+		} else if (locatorKey.endsWith("_Name")) {
+			element = driver.findElement(By.name(prop.getProperty(locatorKey)));
+		}
+		
+		return element;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

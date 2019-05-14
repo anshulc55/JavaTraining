@@ -5,9 +5,8 @@
     <classes>
       <class name="com.daradriver.framework.test.LoginTest.loginTest">
         <methods>
-          <include name="testTwo"/>
+          <include name="endReport"/>
           <include name="testOne"/>
-          <include name="testThree"/>
         </methods>
       </class> <!-- com.daradriver.framework.test.LoginTest.loginTest -->
     </classes>

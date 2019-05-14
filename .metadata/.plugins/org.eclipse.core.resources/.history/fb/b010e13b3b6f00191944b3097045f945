@@ -1,0 +1,39 @@
+package com.daradriver.framework.test.LoginTest;
+
+import org.testng.annotations.Test;
+
+import com.datadrivern.framework.base.BaseUI;
+
+public class loginTest extends BaseUI {
+	
+	@Test
+	public void testOne(){
+		
+		invokeBrowser("chrome");
+		openURL("websiteURL");
+		elementClick("singinBtn_xpath");
+		enterText("usrnameTextbox_Id", "anshulc55");
+		tearDown();
+	}
+	
+	//@Test (dependsOnMethods="testOne")
+	public void testTwo(){
+		invokeBrowser("safari");
+		openURL("websiteURL");
+		elementClick("singinBtn_xpath");
+		enterText("usrnameTextbox_Xpath", "anshulc55");
+		tearDown();
+		
+	}
+	
+	//@Test(dependsOnMethods="testTwo")
+	public void testThree(){
+		invokeBrowser("Mozila");
+		openURL("websiteURL");
+		elementClick("singinBtn_xpath");
+		enterText("usrnameTextbox_Xpath", "anshulc55");
+		tearDown();
+		
+	}
+
+}
