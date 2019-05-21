@@ -1,0 +1,55 @@
+package com.daradriver.framework.test.LoginTest;
+
+import java.io.IOException;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.Markup;
+import com.datadriven.framework.utils.ExtentReportManager;
+import com.datadrivern.framework.base.BaseUI;
+
+public class loginTest extends BaseUI {
+
+	@Test
+	public void testOne() {
+		
+	    logger = report.createTest("Enter UserName And Password in Rediff");
+		invokeBrowser("chrome");
+		openURL("websiteURL");
+		elementClick("singinBtn_Xpath");
+		enterText("usrnameTextbox_Id", "anshulc55");
+		enterText("passwordTextb0x_CSS", "PasswordText");		
+	}
+
+	@AfterTest
+	public void endReport() {
+	report.flush();
+
+	}
+
+	 @Test (priority=1)
+	public void testTwo() {
+		logger = report.createTest("Open Rediff in Mozila And Execute Flow");
+		invokeBrowser("chrome");
+		openURL("websiteURL");
+		elementClick("singinBtn_xpath");
+		enterText("usrnameTextbox_Xpath", "anshulc55");
+		tearDown();
+
+	}
+
+	// @Test(dependsOnMethods="testTwo")
+	public void testThree() {
+		invokeBrowser("Mozila");
+		openURL("websiteURL");
+		elementClick("singinBtn_xpath");
+		enterText("usrnameTextbox_Xpath", "anshulc55");
+		tearDown();
+
+	}
+
+}

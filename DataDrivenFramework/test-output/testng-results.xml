@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36551" started-at="2019-05-21T16:56:16Z" finished-at="2019-05-21T16:56:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="36551" started-at="2019-05-21T16:56:16Z" finished-at="2019-05-21T16:56:52Z">
+      <class name="com.daradriver.framework.test.LoginTest.loginTest">
+        <test-method status="PASS" signature="testOne(java.util.Hashtable)[pri:0, instance:com.daradriver.framework.test.LoginTest.loginTest@149494d8]" name="testOne" duration-ms="18553" started-at="2019-05-21T16:56:16Z" data-provider="getTestOneData" finished-at="2019-05-21T16:56:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Col6=TB1.6, Col2 =TB1.2, Col4=TB1.4, Col3=TB1.3, Col5 =TB1.5, Col1 =TB1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.daradriver.framework.test.LoginTest.loginTest@149494d8]" name="afterTest" is-config="true" duration-ms="182" started-at="2019-05-21T16:56:35Z" finished-at="2019-05-21T16:56:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="testOne(java.util.Hashtable)[pri:0, instance:com.daradriver.framework.test.LoginTest.loginTest@149494d8]" name="testOne" duration-ms="16320" started-at="2019-05-21T16:56:35Z" data-provider="getTestOneData" finished-at="2019-05-21T16:56:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Col6=TB2.6, Col2 =TB2.2, Col4=TB2.4, Col3=TB2.3, Col5 =TB2.5, Col1 =TB2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.daradriver.framework.test.LoginTest.loginTest@149494d8]" name="afterTest" is-config="true" duration-ms="245" started-at="2019-05-21T16:56:51Z" finished-at="2019-05-21T16:56:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.daradriver.framework.test.LoginTest.loginTest@149494d8]" name="endReport" is-config="true" duration-ms="480" started-at="2019-05-21T16:56:52Z" finished-at="2019-05-21T16:56:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.daradriver.framework.test.LoginTest.loginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

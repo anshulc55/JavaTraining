@@ -1,0 +1,22 @@
+package com.datadriven.framework.utils;
+
+public class ReadTestData {
+	
+	public static void main(String args[]){
+		ReadExcelDataFile readdata = new ReadExcelDataFile(System.getProperty("user.dir")+"/src/main/java/testData/TestData_Testmanagement.xlsx");
+		String sheetName = "Feature1";
+		String testName = "Test One";
+		
+		int startRowNum = 0;
+		while (!readdata.getCellData(sheetName, 1, startRowNum).equalsIgnoreCase(testName)) {
+			System.out.println(readdata.getCellData(sheetName, 1, startRowNum));
+			startRowNum++;
+			//System.out.println(startRowNum);
+			if(startRowNum ==15){
+				break;
+			}
+		}
+		System.out.println("Test Starts from Row Number : " + startRowNum);
+	}
+
+}

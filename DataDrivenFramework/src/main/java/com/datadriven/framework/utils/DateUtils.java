@@ -8,5 +8,4 @@ public class DateUtils {
 		Date date = new Date();
 		return date.toString().replaceAll(":", "_").replaceAll(" ", "_");
 	}
-
 }

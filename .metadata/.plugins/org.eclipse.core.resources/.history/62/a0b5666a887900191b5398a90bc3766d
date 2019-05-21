@@ -1,0 +1,9 @@
+package com.datadriven.framework.utils;
+
+public class tempreaddata {
+	
+	public static void main(String agrs[]){
+		
+	}
+
+}

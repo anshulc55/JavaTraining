@@ -1,38 +1,23 @@
 package com.daradriver.framework.test.LoginTest;
 
-import java.io.IOException;
-
+import java.util.Hashtable;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.Markup;
-import com.datadriven.framework.utils.ExtentReportManager;
+import com.datadriven.framework.utils.TestDataProvider;
 import com.datadrivern.framework.base.BaseUI;
 
 public class loginTest extends BaseUI {
 
-	@Test
-	public void testOne() {
+	@Test(dataProvider="getTestOneData")
+	public void testOne(Hashtable<String, String> dataTable) {
 		
-	    logger = report.createTest("Login Rediff Money DashBaard");
-
-		logger.log(Status.INFO, "Initilizing the Browser ");
+	    logger = report.createTest("Enter UserName And Password in Rediff : " + dataTable.get("Col1 "));
 		invokeBrowser("chrome");
-		logger.log(Status.INFO, "Opening the WebSite ");
 		openURL("websiteURL");
-		logger.log(Status.INFO, "Click on Sign-In Button ");
 		elementClick("singinBtn_Xpath");
-		logger.log(Status.INFO, "Entering Email & Password ");
-		enterText("usrnameTextbox_Id", "anshulc55");
-		enterText("passwordTextb0x_CSS", "PasswordText");
-		logger.log(Status.FAIL, "Test Execution Failed ");
-		// tearDown();
-	
-		takeScreenShotOnFailure();
-			
+		enterText("usrnameTextbox_Id", dataTable.get("Col1 "));
+		enterText("passwordTextb0x_CSS", dataTable.get("Col3"));		
 	}
 
 	@AfterTest
@@ -40,15 +25,19 @@ public class loginTest extends BaseUI {
 	report.flush();
 
 	}
+	
+	@DataProvider
+	public Object[][] getTestOneData(){
+		return TestDataProvider.getTestData("TestData_Testmanagement.xlsx", "Feature 1", "Test Two");
+	}
 
-	// @Test (dependsOnMethods="testOne")
+	 //@Test
 	public void testTwo() {
-		invokeBrowser("safari");
+		logger = report.createTest("Open Rediff and Enter UserName");
+		invokeBrowser("chrome");
 		openURL("websiteURL");
-		elementClick("singinBtn_xpath");
+		elementClick("singinBtn_Xpath");
 		enterText("usrnameTextbox_Xpath", "anshulc55");
-		tearDown();
-
 	}
 
 	// @Test(dependsOnMethods="testTwo")

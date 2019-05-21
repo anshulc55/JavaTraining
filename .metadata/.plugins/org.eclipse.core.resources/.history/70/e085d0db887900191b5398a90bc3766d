@@ -1,0 +1,12 @@
+package com.datadriven.framework.utils;
+
+public class tempreaddata {
+
+	public static void main(String agrs[]) {
+		ReadExcelDataFile readData = new ReadExcelDataFile(System.getProperty("user.dir") + "/testData/TestData.xlsx");
+		
+		int totalRows = readData.getRowCount("SampleData");
+		System.out.println("Total Number of Rows : " + totalRows);
+	}
+
+}
