@@ -1,9 +1,0 @@
-package com.datadriven.framework.utils;
-
-public class tempreaddata {
-	
-	public static void main(String agrs[]){
-		ReadExcelDataFile readData = new ReadExcelDataFile(System.getProperty("user.dir")+ "/testData/TestData.xlsx");
-	}
-
-}

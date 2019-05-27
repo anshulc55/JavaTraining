@@ -6,4 +6,4 @@ reporterEmail=
 reporterName=
 resetSendMode=KEEP
 resetSendModeOn=0
-sendMode=NOTIFY
+sendMode=NEVER
