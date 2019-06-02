@@ -70,14 +70,19 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="POMFramework.SeleniumPOMFramework"/>
+			<item value="POMFramework.Selenium"/>
 			<item value="comseleniumframework.DataDrivenFramework"/>
 			<item value="com.datadriven.framework"/>
 		</list>
 		<list key="groupId">
+			<item value="POMFramework"/>
 			<item value="comseleniumframework"/>
 			<item value="com.datadriven"/>
 		</list>
 		<list key="artifactId">
+			<item value="SeleniumPOMFramework"/>
+			<item value="Selenium"/>
 			<item value="DataDrivenFramework"/>
 			<item value="framework"/>
 		</list>
