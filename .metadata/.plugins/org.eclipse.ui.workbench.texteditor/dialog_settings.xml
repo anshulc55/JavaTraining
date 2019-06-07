@@ -6,19 +6,20 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="elementClick(&quot;singinBtn_xpath&quot;);" key="selection"/>
+		<item value="BaseUI" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="BaseUI"/>
+			<item value="logger"/>
 			<item value="elementClick(&quot;singinBtn_Xpath&quot;);"/>
 			<item value="singinBtn_xpath"/>
 			<item value="usrnameTextbox_Xpath"/>
 			<item value="package Practice;"/>
 			<item value="&quot;//iframe[@classs=&apos;demo-frame&apos;]&quot;"/>
 			<item value="package com.selenium.masterpart1;"/>
-			<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;"/>
 		</list>
 		<list key="replacehistory">
 		</list>

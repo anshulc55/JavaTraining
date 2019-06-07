@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import PageClasses.LandingPage;
-import PageClasses.LoginPage;
 import PageClasses.RediffMailPage;
 
 public class MailTests {

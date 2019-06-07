@@ -5,7 +5,9 @@
     <classes>
       <class name="TestCases.MyPorfolioTest">
         <methods>
-          <include name="openPorfolio"/>
+          <include name="openPorfolio" invocation-numbers="1"/>
+          <include name="verifyLogin" invocation-numbers="0 1"/>
+          <include name="flushReports"/>
         </methods>
       </class> <!-- TestCases.MyPorfolioTest -->
     </classes>
