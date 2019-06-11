@@ -4952,3 +4952,7 @@ org.eclipse.core.runtime.CoreException: Launch configuration LoginTest reference
 2019-06-09 14:20:29,333 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/anshul/Trainings/JavaProjectTraining/SeleniumPOMFramework/src/main/resources
 2019-06-09 14:20:29,334 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-06-09 14:20:29,334 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/anshul/Trainings/JavaProjectTraining/SeleniumPOMFramework/src/test/resources
+2019-06-11 19:42:47,835 [Worker-155] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 19:42:47,836 [Worker-155] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/anshul/Trainings/JavaProjectTraining/SeleniumPOMFramework/src/main/resources
+2019-06-11 19:42:47,838 [Worker-155] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-06-11 19:42:47,838 [Worker-155] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/anshul/Trainings/JavaProjectTraining/SeleniumPOMFramework/src/test/resources
