@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,34 +102,10 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestCases.MyPorfolioTest" hash-for-method="openPorfolio({Password=Anshul@123, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Password, ...)">openPorfolio({Password=Anshul@123, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Password, ...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestCases.MyPorfolioTest" hash-for-method="verifyLogin({Password=Anshul@123, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Credential...)">verifyLogin({Password=Anshul@123, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Credential...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestCases.MyPorfolioTest" hash-for-method="verifyLogin({Password=Test@1234, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid UserName, U...)">verifyLogin({Password=Test@1234, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid UserName, U...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestCases.MyStockTest" hash-for-method="AddStockTest({StockPrice=1200.0, PortfolioName=My 2019 Stocks, Comment=, Quantity=1000.0, StockName=Bosch Ltd})">AddStockTest({StockPrice=1200.0, PortfolioName=My 2019 Stocks, Comment=, Quantity=1000.0, StockName=Bosch Ltd})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestCases.MyPorfolioTest" hash-for-method="openPorfolio({Password=Test@1234, PageTitle=Rediff Moneywiz | My Portfolio(s), Comment=Valid Credentials, UserNam...)">openPorfolio({Password=Test@1234, PageTitle=Rediff Moneywiz | My Portfolio(s), Comment=Valid Credentials, UserNam...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -144,102 +120,21 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">TestCases.MyPorfolioTest</span>
+              <span class="class-name">TestCases.MyStockTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="openPorfolio({Password=Anshul@123, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Password, ...)">
-                  </a> <!-- openPorfolio({Password=Anshul@123, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Password, ...) -->
-                  <span class="method-name">openPorfolio</span>
-                  <span class="parameters">({Password=Anshul@123, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Password, UserName=anshulc55})</span>
-                  <div class="stack-trace">java.lang.AssertionError: Login is failed on Portfolio Login Page
+                  <a name="AddStockTest({StockPrice=1200.0, PortfolioName=My 2019 Stocks, Comment=, Quantity=1000.0, StockName=Bosch Ltd})">
+                  </a> <!-- AddStockTest({StockPrice=1200.0, PortfolioName=My 2019 Stocks, Comment=, Quantity=1000.0, StockName=Bosch Ltd}) -->
+                  <span class="method-name">AddStockTest</span>
+                  <span class="parameters">({StockPrice=1200.0, PortfolioName=My 2019 Stocks, Comment=, Quantity=1000.0, StockName=Bosch Ltd})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Given Stock : Bosch Ltd is not present in this Portfolio expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
-	at baseClasses.PageBaseClass.reportFail(PageBaseClass.java:67)
-	at PageClasses.PortFolioLoginPage.doLogin(PortFolioLoginPage.java:58)
-	at TestCases.MyPorfolioTest.openPorfolio(MyPorfolioTest.java:35)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLogin({Password=Anshul@123, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Credential...)">
-                  </a> <!-- verifyLogin({Password=Anshul@123, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Credential...) -->
-                  <span class="method-name">verifyLogin</span>
-                  <span class="parameters">({Password=Anshul@123, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Credentials, UserName=anshulc})</span>
-                  <div class="stack-trace">java.lang.AssertionError: Password box is not appeared
-	at org.testng.Assert.fail(Assert.java:96)
-	at baseClasses.PageBaseClass.reportFail(PageBaseClass.java:67)
-	at baseClasses.PageBaseClass.veriyElementIsDisplayed(PageBaseClass.java:54)
-	at PageClasses.PortFolioLoginPage.verifyPasswordField(PortFolioLoginPage.java:90)
-	at TestCases.MyPorfolioTest.verifyLogin(MyPorfolioTest.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLogin({Password=Test@1234, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid UserName, U...)">
-                  </a> <!-- verifyLogin({Password=Test@1234, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid UserName, U...) -->
-                  <span class="method-name">verifyLogin</span>
-                  <span class="parameters">({Password=Test@1234, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid UserName, UserName=anshulc})</span>
-                  <div class="stack-trace">java.lang.AssertionError: Password box is not appeared
-	at org.testng.Assert.fail(Assert.java:96)
-	at baseClasses.PageBaseClass.reportFail(PageBaseClass.java:67)
-	at baseClasses.PageBaseClass.veriyElementIsDisplayed(PageBaseClass.java:54)
-	at PageClasses.PortFolioLoginPage.verifyPasswordField(PortFolioLoginPage.java:90)
-	at TestCases.MyPorfolioTest.verifyLogin(MyPorfolioTest.java:54)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at PageClasses.MyPorfolioPage.verifyStock(MyPorfolioPage.java:110)
+	at TestCases.MyStockTest.AddStockTest(MyStockTest.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -271,26 +166,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.MyPorfolioTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="openPorfolio({Password=Test@1234, PageTitle=Rediff Moneywiz | My Portfolio(s), Comment=Valid Credentials, UserNam...)">
-                  </a> <!-- openPorfolio({Password=Test@1234, PageTitle=Rediff Moneywiz | My Portfolio(s), Comment=Valid Credentials, UserNam...) -->
-                  <span class="method-name">openPorfolio</span>
-                  <span class="parameters">({Password=Test@1234, PageTitle=Rediff Moneywiz | My Portfolio(s), Comment=Valid Credentials, UserName=anshulc55})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/g2/v_wztjz968b86xr6l_29g_qc0000gn/T/testng-eclipse--1907541793/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/g2/v_wztjz968b86xr6l_29g_qc0000gn/T/testng-eclipse-417701652/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -299,7 +178,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.MyPorfolioTest&quot;/&gt;
+      &lt;class name=&quot;TestCases.MyStockTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -339,23 +218,11 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openPorfolio')
-data.setCell(0, 2, 'TestCases.MyPorfolioTest')
-data.setCell(0, 3, 35699);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'openPorfolio')
-data.setCell(1, 2, 'TestCases.MyPorfolioTest')
-data.setCell(1, 3, 32188);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLogin')
-data.setCell(2, 2, 'TestCases.MyPorfolioTest')
-data.setCell(2, 3, 24002);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyLogin')
-data.setCell(3, 2, 'TestCases.MyPorfolioTest')
-data.setCell(3, 3, 17330);
+data.setCell(0, 1, 'AddStockTest')
+data.setCell(0, 2, 'TestCases.MyStockTest')
+data.setCell(0, 3, 101342);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -386,44 +253,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.MyPorfolioTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestCases.MyStockTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">openPorfolio({Password=Test@1234, PageTitle=Rediff Moneywiz | My Portfolio(s), Comment=Valid Credentials, UserNam...)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddStockTest({StockPrice=1200.0, PortfolioName=My 2019 Stocks, Comment=, Quantity=1000.0, StockName=Bosch Ltd})</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">flushReports</span>
-                <span class="method-start">35703 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">openPorfolio({Password=Anshul@123, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Password, ...)</span>
-                <span class="method-start">36341 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">flushReports</span>
-                <span class="method-start">68534 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyLogin({Password=Test@1234, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid UserName, U...)</span>
-                <span class="method-start">68895 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">flushReports</span>
-                <span class="method-start">92899 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyLogin({Password=Anshul@123, PageTitle=Indian stock markets: Login to Portfolio, Comment=Invalid Credential...)</span>
-                <span class="method-start">93196 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">flushReports</span>
-                <span class="method-start">110529 ms</span>
+                <span class="method-start">101346 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

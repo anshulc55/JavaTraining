@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.apache.commons.io.filefilter.FileFilterUtils"/>
 <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
 <fullyQualifiedTypeName name="org.testng.asserts.SoftAssert"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
@@ -19,7 +18,6 @@
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="com.mongodb.gridfs.CLI"/>
 <fullyQualifiedTypeName name="com.datadriven.framework.utils.TestDataProvider"/>
-<fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
 <fullyQualifiedTypeName name="java.util.Hashtable"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="com.datadrivern.framework.base.BaseUI"/>
@@ -33,11 +31,9 @@
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="net.bytebuddy.agent.builder.AgentBuilder.Default.Transformation.Resolution"/>
 <fullyQualifiedTypeName name="java.lang.AssertionError"/>
-<fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
 <fullyQualifiedTypeName name="PageClasses.LoginPage"/>
 <fullyQualifiedTypeName name="okhttp3.internal.http.RetryAndFollowUpInterceptor"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
 <fullyQualifiedTypeName name="javax.swing.LookAndFeel"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.ie.InternetExplorerDriver"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="baseClasses.PageBaseClass"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
 <fullyQualifiedTypeName name="com.aventstack.extentreports.Status"/>
+<fullyQualifiedTypeName name="utilities.TestDataProvider"/>
+<fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
 </qualifiedTypeNameHistroy>

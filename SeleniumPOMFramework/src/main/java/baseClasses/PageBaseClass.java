@@ -2,13 +2,17 @@ package baseClasses;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.xmlbeans.impl.xb.xsdschema.All;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -46,6 +50,45 @@ public class PageBaseClass extends BaseTestClass {
 
 	}
 	
+	
+	/****************** Accept Java Script Alert ***********************/
+	public void acceptAlert(){
+		try {
+			Alert alert = driver.switchTo().alert();
+			alert.accept();
+			logger.log(Status.PASS, "Page Alert Accepted");
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		
+	}
+	
+	/****************** Cancel Java Script Alert ***********************/
+	public void cancelAlert(){
+		try {
+			Alert alert = driver.switchTo().alert();
+			alert.dismiss();;
+			logger.log(Status.PASS, "Page Alert Rejected");
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		
+	}
+	
+	/****************** Select value From DropDown ***********************/
+	public void selectDropDownValue(WebElement webElement, String value){
+		try {
+			Select select = new Select(webElement);
+			select.selectByVisibleText(value);
+			logger.log(Status.PASS, "Selectd the Value : " + value);
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+	}
+	
+	
+	
+	/****************** Verify Element is Present ***********************/
 	public void veriyElementIsDisplayed(WebElement webElement){
 		try {
 			if(webElement.isDisplayed()){
@@ -59,6 +102,19 @@ public class PageBaseClass extends BaseTestClass {
 		}
 		
 	}
+	
+	/****************** Get All Elements of DropDown ***********************/
+	public List getAllElementsOfDropDown(WebElement webElement){
+		try {
+			Select select = new Select(webElement);
+			List<WebElement> allElements = select.getOptions();
+			return allElements;
+		} catch (Exception e) {
+			reportFail(e.getMessage());
+		}
+		 return null;
+	}
+	
 
 	/****************** Reporting Functions ***********************/
 	public void reportFail(String reportString) {
