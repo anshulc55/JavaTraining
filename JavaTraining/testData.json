@@ -1,0 +1,72 @@
+{
+  "testdata": [
+    {
+	  "testName": "LoginTest",
+      "data": [
+        {
+          "runmode": "y",
+          "browser": "chrome",
+          "username":"abc@gmail.com",
+          "password":"pass1234"
+        },
+        {
+          "runmode": "n",
+          "browser": "mozilla",
+          "username":"abc@gmail.com",
+          "password":"pass1234"
+        },
+        {
+          "runmode": "y",
+          "browser": "edge",
+          "username":"abc@gmail.com",
+          "password":"pass1234"
+        }
+      ]
+      
+    },
+   {
+      "testName": "PurchaseProductTest",
+      "data": [
+        {
+          "runmode": "y",
+          "browser": "chrome",
+          "productname":"iphone1 10",
+          "mincost":"10000",
+          "maxcost":"50000"
+        },
+        {
+          "runmode": "y",
+          "browser": "mozilla",
+          "productname":"IBM ThinkPad",
+          "mincost":"50000",
+          "maxcost":"100000"
+        },
+        {
+          "runmode": "n",
+          "browser": "edge",
+          "productname":"Iball Headphones",
+          "mincost":"1000",
+          "maxcost":"5000"
+        }
+      ]
+    },
+       {
+      "testName": "ProductOperationTest",
+      "data": [
+        {
+          "runmode": "y",
+          "browser": "chrome",
+          "productname":"iphone 10",
+          "operation":"remove"
+        },
+        {
+          "runmode": "y",
+          "browser": "mozilla",
+          "productname":"IBM ThinkPad",
+          "mincost":"50000",
+          "maxcost":"100000"
+        }
+      ]
+    }
+  ]
+}
