@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Live Project Automation : RediffMail">
+<suite name="Verify FaceBook HomePage">
+	<parameter name="browser" value="chrome"/> 
 	
-	<test name="Rediff PortFolio Test">
+	<test name="Facebook Home Test">
 		<classes>
-			<class name="com.liveproject.CreatePortfolio"></class>
+			<class name="com.selenuim.basic.InvokeBrowserDynamically"></class>
 		</classes>
 	
 	</test>

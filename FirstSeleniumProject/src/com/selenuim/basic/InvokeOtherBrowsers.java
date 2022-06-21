@@ -16,7 +16,7 @@ public class InvokeOtherBrowsers {
 		String URL = "https://www.facebook.com";
 		
 /*//		//Open the URL with Selenium
-		System.setProperty("webdriver.chrome.driver", "/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		
 //		//Only for Windpws
 //		//System.setProperty("webdriver.chrome.driver", "c:\\test\\selenium.....\\chromedriver.exe")
@@ -24,10 +24,10 @@ public class InvokeOtherBrowsers {
 		WebDriver driver = new ChromeDriver();*/
 		
 		//FireFox Browser Invoke
-		System.setProperty("webdriver.gecko.driver", "/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/geckodriver");
+		System.setProperty("webdriver.gecko.driver", "/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/geckodriver");
 		WebDriver driver = new FirefoxDriver();
 		
-		/*System.setProperty("webdriver.opera.driver", "/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/operadriver");
+		/*System.setProperty("webdriver.opera.driver", "/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/operadriver");
 		WebDriver driver = new OperaDriver();*/
 		
 	/*	System.setProperty("webdriver.ie.driver", "PATH IE Driver EXE");

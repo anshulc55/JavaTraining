@@ -41,7 +41,7 @@ public class OptionsClassSelenium {
 	public void acceptCertificate() {
 
 		System.setProperty("webdriver.gecko.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/geckodriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/geckodriver");
 
 		FirefoxOptions fo = new FirefoxOptions();
 		fo.setAcceptInsecureCerts(false);
@@ -67,9 +67,10 @@ public class OptionsClassSelenium {
 
 	}
 
+	@Test
 	public void OpenHeadLess() {
 		System.setProperty("webdriver.gecko.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/geckodriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/geckodriver");
 
 		FirefoxOptions fo = new FirefoxOptions();
 
@@ -85,11 +86,11 @@ public class OptionsClassSelenium {
 
 	}
 
-	
+	@Test
 	public void setArguments() {
 
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		
 		ChromeOptions co = new ChromeOptions();
 		co.addArguments("--disable-infobars");
@@ -105,7 +106,7 @@ public class OptionsClassSelenium {
 	public void SetBrowserNotification() {
 
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		
 		ChromeOptions co = new ChromeOptions();
 		co.addArguments("--disable-infobars");
@@ -114,7 +115,7 @@ public class OptionsClassSelenium {
 		WebDriver driver = new ChromeDriver(co);
 		driver.manage().window().maximize();
 		
-		driver.get("https://drupal-stage-web.weather.com/en-IN");
+		driver.get("https://www.pushengage.com/demo");
 
 	}
 	
@@ -122,7 +123,7 @@ public class OptionsClassSelenium {
 	public void handleUnHandledAlert() {
 
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		
 		ChromeOptions co = new ChromeOptions();
 		co.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT);
@@ -130,7 +131,7 @@ public class OptionsClassSelenium {
 		WebDriver driver = new ChromeDriver(co);
 		driver.manage().window().maximize();
 		
-		driver.get("https://drupal-stage-web.weather.com/en-IN");
+		driver.get("https://www.pushengage.com/demo");
 
 	}
 
@@ -139,7 +140,7 @@ public class OptionsClassSelenium {
 	public void SetPageLoadStrategy() {
 
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		
 		ChromeOptions co = new ChromeOptions();
 		co.setPageLoadStrategy(PageLoadStrategy.EAGER);
@@ -147,7 +148,7 @@ public class OptionsClassSelenium {
 		WebDriver driver = new ChromeDriver(co);
 		driver.manage().window().maximize();
 		
-		driver.get("https://drupal-stage-web.weather.com/en-IN");
+		driver.get("https://www.pushengage.com/demo");
 
 	}
 

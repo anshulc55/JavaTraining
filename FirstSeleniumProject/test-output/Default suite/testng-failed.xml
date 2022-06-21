@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.liveproject.AddDeleteStockInPortfolio">
+      <class name="com.selenuim.basic.InvokeBrowserDynamically">
         <methods>
-          <include name="addStockTest"/>
-          <include name="deleteStock"/>
+          <include name="verifyFaceBookHomePage"/>
+          <include name="OpenBrowser"/>
+          <include name="quitBrowser"/>
         </methods>
-      </class> <!-- com.liveproject.AddDeleteStockInPortfolio -->
+      </class> <!-- com.selenuim.basic.InvokeBrowserDynamically -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

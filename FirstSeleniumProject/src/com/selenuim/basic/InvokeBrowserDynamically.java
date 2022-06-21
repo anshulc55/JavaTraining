@@ -20,16 +20,16 @@ public class InvokeBrowserDynamically {
 		
 		if(browser.equalsIgnoreCase("chrome")){
 		//Open the URL with Selenium
-		System.setProperty("webdriver.chrome.driver", "/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		
 		driver = new ChromeDriver();
 		//Only for Windpws
 		//System.setProperty("webdriver.chrome.driver", "c:\\test\\selenium.....\\chromedriver.exe")
 		}else if (browser.equalsIgnoreCase("Firefox")) {
-			System.setProperty("webdriver.gecko.driver", "/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/geckodriver");
 			 driver = new FirefoxDriver();	
 		}else{
-			System.setProperty("webdriver.opera.driver", "/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/operadriver");
+			System.setProperty("webdriver.opera.driver", "/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/operadriver");
 			 driver = new OperaDriver();
 		}
 		

@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46416" started-at="2019-05-04T02:27:27Z" finished-at="2019-05-04T02:28:13Z">
+  <suite name="Default suite" duration-ms="46631" started-at="2022-06-21T20:04:40 IST" finished-at="2022-06-21T20:05:27 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46416" started-at="2019-05-04T02:27:27Z" finished-at="2019-05-04T02:28:13Z">
-      <class name="com.liveproject.AddDeleteStockInPortfolio">
-        <test-method status="PASS" signature="addStockTest()[pri:0, instance:com.liveproject.AddDeleteStockInPortfolio@20e2cbe0]" name="addStockTest" duration-ms="41975" started-at="2019-05-04T02:27:27Z" finished-at="2019-05-04T02:28:09Z">
+    <test name="Default test" duration-ms="46631" started-at="2022-06-21T20:04:40 IST" finished-at="2022-06-21T20:05:27 IST">
+      <class name="com.selenuim.basic.OptionsClassSelenium">
+        <test-method status="PASS" signature="OpenHeadLess()[pri:0, instance:com.selenuim.basic.OptionsClassSelenium@670b40af]" name="OpenHeadLess" duration-ms="25037" started-at="2022-06-21T20:04:40 IST" finished-at="2022-06-21T20:05:05 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addStockTest -->
-        <test-method status="PASS" signature="deleteStock()[pri:0, instance:com.liveproject.AddDeleteStockInPortfolio@20e2cbe0]" name="deleteStock" duration-ms="4394" started-at="2019-05-04T02:28:09Z" depends-on-methods="com.liveproject.AddDeleteStockInPortfolio.addStockTest" finished-at="2019-05-04T02:28:13Z">
+        </test-method> <!-- OpenHeadLess -->
+        <test-method status="PASS" signature="SetBrowserNotification()[pri:0, instance:com.selenuim.basic.OptionsClassSelenium@670b40af]" name="SetBrowserNotification" duration-ms="6998" started-at="2022-06-21T20:05:05 IST" finished-at="2022-06-21T20:05:12 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteStock -->
-      </class> <!-- com.liveproject.AddDeleteStockInPortfolio -->
+        </test-method> <!-- SetBrowserNotification -->
+        <test-method status="PASS" signature="SetPageLoadStrategy()[pri:0, instance:com.selenuim.basic.OptionsClassSelenium@670b40af]" name="SetPageLoadStrategy" duration-ms="3219" started-at="2022-06-21T20:05:12 IST" finished-at="2022-06-21T20:05:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetPageLoadStrategy -->
+        <test-method status="PASS" signature="handleUnHandledAlert()[pri:0, instance:com.selenuim.basic.OptionsClassSelenium@670b40af]" name="handleUnHandledAlert" duration-ms="7988" started-at="2022-06-21T20:05:15 IST" finished-at="2022-06-21T20:05:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleUnHandledAlert -->
+        <test-method status="PASS" signature="setArguments()[pri:0, instance:com.selenuim.basic.OptionsClassSelenium@670b40af]" name="setArguments" duration-ms="3321" started-at="2022-06-21T20:05:23 IST" finished-at="2022-06-21T20:05:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setArguments -->
+      </class> <!-- com.selenuim.basic.OptionsClassSelenium -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

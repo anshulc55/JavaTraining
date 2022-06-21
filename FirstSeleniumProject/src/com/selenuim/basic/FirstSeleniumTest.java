@@ -13,7 +13,7 @@ public class FirstSeleniumTest {
 		String URL = "https://www.facebook.com";
 		
 		//Open the URL with Selenium
-		System.setProperty("webdriver.chrome.driver", "/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		
 		//Only for Windpws
 		//System.setProperty("webdriver.chrome.driver", "c:\\test\\selenium.....\\chromedriver.exe")

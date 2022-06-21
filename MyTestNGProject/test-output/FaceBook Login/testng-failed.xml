@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FaceBook Login]">
+  <test thread-count="5" name="Sample Test Case for Package(failed)">
+    <classes>
+      <class name="com.testng.training.SkippingExample">
+        <methods>
+          <include name="testThree"/>
+        </methods>
+      </class> <!-- com.testng.training.SkippingExample -->
+      <class name="com.testng.training.TestParameters">
+        <methods>
+          <include name="testCaseTwo"/>
+          <include name="testCaseOne"/>
+        </methods>
+      </class> <!-- com.testng.training.TestParameters -->
+      <class name="com.testng.training.AssertionExample">
+        <methods>
+          <include name="testFour"/>
+          <include name="testTwo"/>
+        </methods>
+      </class> <!-- com.testng.training.AssertionExample -->
+      <class name="com.testng.training.SoftAssertionExample">
+        <methods>
+          <include name="testCasetwo"/>
+          <include name="testCaseOne"/>
+        </methods>
+      </class> <!-- com.testng.training.SoftAssertionExample -->
+      <class name="com.testng.training.MultiTestDependency">
+        <methods>
+          <include name="init"/>
+          <include name="start"/>
+          <include name="stop"/>
+          <include name="process"/>
+        </methods>
+      </class> <!-- com.testng.training.MultiTestDependency -->
+    </classes>
+  </test> <!-- Sample Test Case for Package(failed) -->
+</suite> <!-- Failed suite [FaceBook Login] -->
