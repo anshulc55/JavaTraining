@@ -1,5 +1,6 @@
 package com.liveproject;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -20,12 +21,13 @@ public class LoginTest {
 	public void openBrowser() {
 
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
 		// Apply Implicit wait
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 	}
 
@@ -40,14 +42,15 @@ public class LoginTest {
 		//Open the Refiff
 		driver.get("https://www.rediff.com/");
 		//Click the Money Link
-		driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/a[2]")).click();
+		driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/a[2]")).click();
 		
-		driver.findElement(By.xpath("//*[@id='signin_info']/a[1]")).click();
+		driver.findElement(By.xpath("//*[@id=\"signin_info\"]/a[1]")).click();
 		
 		driver.findElement(By.xpath("//*[@id='useremail']")).sendKeys("anshulc55@rediffmail.com");
-		driver.findElement(By.xpath("//*[@id='emailsubmit']")).click();
+		//driver.findElement(By.xpath("//*[@id='emailsubmit']")).click();
 		
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		//WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='userpass']"))));
 		
 		driver.findElement(By.xpath("//*[@id='userpass']")).sendKeys("Test@1234");

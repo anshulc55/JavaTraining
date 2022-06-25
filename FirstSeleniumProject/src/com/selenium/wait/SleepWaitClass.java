@@ -12,7 +12,7 @@ public class SleepWaitClass {
 	public void googleSearch() {
 
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul//JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.google.com");

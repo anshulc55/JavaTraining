@@ -1,5 +1,6 @@
 package com.selenium.masterpart2;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -19,12 +20,13 @@ public class HandleMultipleWindows {
 	public void openBrowser(){
 		
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		 driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		 driver.manage().window().maximize();
 
 		// Apply Implicit wait
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(120));
 		
 	}
 	
@@ -33,7 +35,7 @@ public class HandleMultipleWindows {
 		driver.quit();
 	}
 	
-	//@Test
+	@Test
 	public void handleFacebook()
 	{
 		

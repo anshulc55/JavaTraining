@@ -1,5 +1,6 @@
 package com.selenium.masterpart2;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -19,12 +20,13 @@ WebDriver driver = null;
 	public void openBrowser(){
 		
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		 driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
 		// Apply Implicit wait
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(1));
 		
 	}
 	

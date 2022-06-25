@@ -1,5 +1,6 @@
 package com.selenium.wait;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -10,18 +11,23 @@ import org.testng.annotations.Test;
 
 public class ImplicitWaitClass {
 	
+	
 	@Test
 	public void testimplicitWait(){
 		
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.google.com");
 		driver.manage().window().maximize();
 		
 		//Apply Implicit wait
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		// Selenium 3
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		// Selenium 4
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
 		//WebElement of Google Search Box
 		WebElement searchBox = driver.findElement(By.xpath("//input[@name='q' and @title='Search']"));

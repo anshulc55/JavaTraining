@@ -1,8 +1,7 @@
 package com.selenium.masterpart3;
 
-import java.util.ArrayList;
+import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,13 +21,13 @@ WebDriver driver = null;
 	public void openBrowser(){
 		
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		 driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
 		// Apply Implicit wait
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(1));
 	}
 	
 	@AfterMethod
@@ -42,7 +41,8 @@ WebDriver driver = null;
 		driver.get("https://www.google.com/");
 		driver.findElement(By.name("q")).sendKeys("Selenium");
 		
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		//WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 		wait.until(ExpectedConditions.visibilityOfAllElements(driver.findElements(By.xpath("//*[@role='listbox']/li"))));
 		
 		List<WebElement> autoSuggets = driver.findElements(By.xpath("//*[@role='listbox']/li"));

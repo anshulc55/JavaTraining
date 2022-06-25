@@ -1,5 +1,6 @@
 package com.selenium.masterpart2;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -22,12 +23,13 @@ WebDriver driver = null;
 	public void openBrowser(){
 		
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		 driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
 		// Apply Implicit wait
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		
 	}
 	
@@ -45,7 +47,8 @@ WebDriver driver = null;
 		Actions action = new Actions(driver);
 		action.moveToElement(clothLink).build().perform();
 		
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		//WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='CLOTHFOOTW_1']/ul/li[3]/ul/li[1]/a/span"))));
 		
 		WebElement trouserLink = driver.findElement(By.xpath("//*[@id='CLOTHFOOTW_1']/ul/li[3]/ul/li[1]/a/span"));

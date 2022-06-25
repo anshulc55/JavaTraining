@@ -12,7 +12,7 @@ public class XpathClass {
 	public void absoluteXpath() {
 
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -20,8 +20,9 @@ public class XpathClass {
 		driver.get("https://www.rediff.com/");
 
 		driver.findElement(By.linkText("Sign in")).click();
+		
 
-		driver.findElement(By.xpath("//input[@id='login1]")).sendKeys("anshulc55@gmail.com");
+		driver.findElement(By.xpath("//input[@id='login1']")).sendKeys("anshulc55@gmail.com");
 
 		try {
 			Thread.sleep(4000);
@@ -31,10 +32,10 @@ public class XpathClass {
 		}
 
 		// driver.findElement(By.xpath("/html/body/div/div/div/a/img")).click();
-		driver.findElement(By.xpath("//div/a/img")).click();
+		driver.findElement(By.xpath("//div[@class='cell logo']/a")).click();
 
 		Assert.assertEquals(driver.getTitle(),
-				"Rediff.com: Online Shopping, Rediffmail, Latest India News, Business, Bollywood, Sports, Stock, Live Cricket Score, Money, Movie Reviews");
+				"Rediff.com: News | Rediffmail | Stock Quotes | Shopping");
 
 		driver.quit();
 	}

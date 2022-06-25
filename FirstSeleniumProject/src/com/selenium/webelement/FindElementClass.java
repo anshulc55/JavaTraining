@@ -11,7 +11,7 @@ public class FindElementClass {
 	public void findElementTest() {
 		
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();

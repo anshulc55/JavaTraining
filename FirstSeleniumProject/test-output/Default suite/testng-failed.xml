@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenuim.basic.InvokeBrowserDynamically">
+      <class name="com.liveproject.CreatePortfolio">
         <methods>
-          <include name="verifyFaceBookHomePage"/>
-          <include name="OpenBrowser"/>
-          <include name="quitBrowser"/>
+          <include name="testCreatePortfolio"/>
+          <include name="testportfolioVerification"/>
+          <include name="openBrowser"/>
+          <include name="testDeletePortfolio"/>
         </methods>
-      </class> <!-- com.selenuim.basic.InvokeBrowserDynamically -->
+      </class> <!-- com.liveproject.CreatePortfolio -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

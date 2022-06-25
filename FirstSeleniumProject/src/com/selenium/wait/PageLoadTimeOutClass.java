@@ -1,5 +1,6 @@
 package com.selenium.wait;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -12,13 +13,18 @@ public class PageLoadTimeOutClass {
 	public void pageLoadTimeOutTest(){
 		
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul//JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
 		//Define Page Load TimeOut
-		//driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+		
+		//Selenium 3
+		//driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		//driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+		
+		// Selenium 4
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
 		
 		driver.get("https://edition.cnn.com/");
 		

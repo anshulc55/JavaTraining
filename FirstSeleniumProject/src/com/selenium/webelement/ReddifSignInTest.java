@@ -13,7 +13,7 @@ public class ReddifSignInTest {
 	public void testReddifSignIn() {
 
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -24,7 +24,7 @@ public class ReddifSignInTest {
 		// Verify Page Tittle
 		String pageTitle = driver.getTitle();
 		Assert.assertEquals(pageTitle,
-				"Rediff.com: Online Shopping, Rediffmail, Latest India News, Business, Bollywood, Sports, Stock, Live Cricket Score, Money, Movie Reviews");
+				"Rediff.com: News | Rediffmail | Stock Quotes | Shopping");
 		
 		// Click Sign-in Button
 		WebElement singInLink = driver.findElement(By.linkText("Sign in"));

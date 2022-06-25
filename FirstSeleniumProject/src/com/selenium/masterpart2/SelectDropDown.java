@@ -1,5 +1,6 @@
 package com.selenium.masterpart2;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -20,14 +21,16 @@ WebDriver driver = null;
 	public void openBrowser(){
 		
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		 driver = new ChromeDriver();
 
-		driver.get("https://ww.facebook.com");
+		driver.get("https://www.facebook.com");
 		driver.manage().window().maximize();
 
 		// Apply Implicit wait
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(120));
+		
 		
 	}
 	
@@ -38,12 +41,14 @@ WebDriver driver = null;
 	
 	@Test
 	public void SelectDOB(){
+		WebElement createaccount = driver.findElement(By.xpath("//*[@class=\"_6ltg\"]/a"));
+		createaccount.click();
 		
-		WebElement monthDropDown = driver.findElement(By.name("birthday_month"));
+		WebElement monthDropDown = driver.findElement(By.xpath("//*[@id=\"month\"]"));
 	
 		//selectByIndex(int index) 
 		Select select = new Select(monthDropDown);
-		select.selectByIndex(5);
+		select.selectByIndex(1);
 		
 		try {
 			Thread.sleep(4000);
@@ -61,7 +66,7 @@ WebDriver driver = null;
 		}
 		
 		//selectByVisibleText(String text) 
-		select.selectByVisibleText("Sept");
+		select.selectByVisibleText("Dec");
 		try {
 			Thread.sleep(4000);
 		} catch (InterruptedException e) {

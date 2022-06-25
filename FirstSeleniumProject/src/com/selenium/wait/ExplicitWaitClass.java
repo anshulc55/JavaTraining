@@ -1,5 +1,6 @@
 package com.selenium.wait;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -20,11 +21,11 @@ public class ExplicitWaitClass {
 	public void setUp() {
 
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
-		driver.get("file:///Users/anshul/Trainings/Selenium/Waits%20in%20Selenium/ExplicitWait.html");
+		driver.get("file:///Users/anshul/Downloads/ExplicitWait.html");
 		// driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 		// For Windows Machine
@@ -44,7 +45,11 @@ public class ExplicitWaitClass {
 		alertBtn.click();
 
 		// Explicit Wait
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		//Selenium 3
+		//WebDriverWait wait = new WebDriverWait(driver, 30);
+		
+		//Selenium 4
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.alertIsPresent());
 
 		driver.switchTo().alert().accept();
@@ -59,7 +64,8 @@ public class ExplicitWaitClass {
 		// Perform action on expected Element
 		driver.findElement(By.id("display-other-button")).click();
 
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		//WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("hidden"))));
 
 	}
@@ -69,7 +75,8 @@ public class ExplicitWaitClass {
 
 		driver.findElement(By.id("checkbox")).click();
 
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		//WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeSelected(driver.findElement(By.xpath("//input[@type='checkbox']"))));
 
 	}
@@ -78,7 +85,8 @@ public class ExplicitWaitClass {
 	public void veriyPresentText() {
 		driver.findElement(By.id("populate-text")).click();
 
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		//WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.textToBePresentInElement(
 				driver.findElement(By.xpath("//h2[@class='target-text']")), "Selenium Webdriver"));
 	}
@@ -87,7 +95,8 @@ public class ExplicitWaitClass {
 	public void verifyElementVisibility() {
 		driver.findElement(By.id("display-other-button")).click();
 
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		//WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("hidden")));
 	}
 

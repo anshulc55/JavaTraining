@@ -1,5 +1,6 @@
 package com.selenium.masterpart3;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -20,12 +21,13 @@ public class HandleWebTable {
 	public void openBrowser(){
 		
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		 driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
 		// Apply Implicit wait
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		
 	}
 	
@@ -38,9 +40,9 @@ public class HandleWebTable {
 	public void manageWebTable(){
 		
 		driver.get("https://www.rediff.com/");
-		driver.findElement(By.xpath("//*[@id='homewrapper']/div[5]/a[3]/div/u")).click();
+		driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/a[2]")).click();
 		
-		driver.findElement(By.xpath("//*[@id='moremoney']/ul/li[3]/a")).click();
+		driver.findElement(By.xpath("//*[@id=\"moremoney\"]/ul/li[3]/a")).click();
 		driver.findElement(By.xpath("//*[@id='showMoreLess']"));
 		
 		//Get Count Rows

@@ -12,7 +12,7 @@ public class CNNTest {
 	public void testTravelLink(){
 		
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -29,8 +29,8 @@ public class CNNTest {
 		
 		//driver.findElement(By.xpath("/html/body/div[5]/div[2]/div[2]/div[2]/a[6]")).click();
 		
-		driver.findElement(By.xpath("//*[@id='nav']/div[2]/div[2]/a[6]")).click();
-		Assert.assertEquals(driver.getTitle(), "CNN Travel | Global Destinations, Tips & Video");
+		driver.findElement(By.xpath("//*[@data-section='world']/a")).click();
+		//Assert.assertEquals(driver.getTitle(), "CNN Travel | Global Destinations, Tips & Video");
 		
 		try {
 			Thread.sleep(3000);

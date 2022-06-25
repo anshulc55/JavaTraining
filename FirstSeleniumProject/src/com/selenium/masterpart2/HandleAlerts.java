@@ -1,5 +1,6 @@
 package com.selenium.masterpart2;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
@@ -21,12 +22,13 @@ WebDriver driver = null;
 	public void openBrowser(){
 		
 		System.setProperty("webdriver.chrome.driver",
-				"/Users/anshul/Trainings/JavaProjectTraining/FirstSeleniumProject/drivers/chromedriver");
+				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
 		 driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
 		// Apply Implicit wait
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(120));
 		
 	}
 	
@@ -40,7 +42,7 @@ WebDriver driver = null;
 		
 		driver.get("https://www.rediff.com/");
 		
-		driver.findElement(By.xpath("//*[@id='homewrapper']/div[5]/a[1]/div/u")).click();
+		driver.findElement(By.xpath("//*[@id=\"signin_info\"]/a[1]")).click();
 		
 		WebElement username = driver.findElement(By.id("login1"));
 		username.sendKeys("anshulc55@gmail.com");
@@ -48,7 +50,8 @@ WebDriver driver = null;
 		WebElement singinBtn = driver.findElement(By.name("proceed"));
 		singinBtn.click();
 		
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		//WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 		wait.until(ExpectedConditions.alertIsPresent());
 		
 		Alert alt = driver.switchTo().alert();

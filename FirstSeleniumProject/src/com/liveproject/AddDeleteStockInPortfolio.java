@@ -2,6 +2,7 @@ package com.liveproject;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -31,19 +32,22 @@ public class AddDeleteStockInPortfolio {
 		driver.manage().window().maximize();
 
 		// Apply Implicit wait
-		driver.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(180, TimeUnit.SECONDS);
+		//river.manage().timeouts().implicitlyWait(180, TimeUnit.SECONDS);
+		//driver.manage().timeouts().pageLoadTimeout(180, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(180));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(180));
 
 		driver.get("https://www.rediff.com/");
 		// Click the Money Link
-		driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/a[2]")).click();
+		driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/a[2]")).click();
 
 		driver.findElement(By.xpath("//*[@id='signin_info']/a[1]")).click();
 
 		driver.findElement(By.xpath("//*[@id='useremail']")).sendKeys("anshulc55@rediffmail.com");
 		driver.findElement(By.xpath("//*[@id='emailsubmit']")).click();
 
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		//WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='userpass']"))));
 
 		driver.findElement(By.xpath("//*[@id='userpass']")).sendKeys("Test@1234");
