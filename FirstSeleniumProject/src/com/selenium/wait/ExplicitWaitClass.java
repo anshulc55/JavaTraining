@@ -9,20 +9,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class ExplicitWaitClass {
 
 	WebDriver driver = null;
 
-	@BeforeMethod
+	@BeforeTest
 	public void setUp() {
-
+		driver = new ChromeDriver();
 		System.setProperty("webdriver.chrome.driver",
 				"/Users/anshul/JavaTraining/FirstSeleniumProject/drivers/chromedriver");
-		driver = new ChromeDriver();
+		
 		driver.manage().window().maximize();
 
 		driver.get("file:///Users/anshul/Downloads/ExplicitWait.html");
@@ -33,7 +33,7 @@ public class ExplicitWaitClass {
 		// driver.get("file:///C:/Selenium/abcd.html");
 	}
 
-	@AfterMethod
+	@AfterTest
 	public void closeBrowser() {
 		driver.quit();
 	}
