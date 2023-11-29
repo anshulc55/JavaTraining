@@ -8,9 +8,8 @@ public class StringIntro {
 		String name1 = "Anshul Chauhan";
 		String name2 = "anshul chauhan";
 		
-		String country = new String("United State");
+		String country = new String("United Statsdadsasd ");
 		String country1 = new String("United State");
-		
 		/*System.out.println(name.equals(name1));
 		System.out.println(name.equals(name2));
 		
