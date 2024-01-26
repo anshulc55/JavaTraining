@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SuiteA" verbose="1" parallel="tests">
+	<test name="TestA" preserve-order="true">
+		<classes>
+			<class name="suiteA.TestClassA" />
+		</classes>
+	</test>
+
+	<test name="TestAA" preserve-order="true">
+		<classes>
+			<class name="suiteA.TestClassAA" />
+		</classes>
+	</test>
+</suite>

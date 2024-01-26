@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-20T11:52:23 IST" name="Suite A and B" finished-at="2024-01-20T11:52:23 IST" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Suite A and B -->
+  <suite started-at="2024-01-20T11:52:13 IST" name="SuiteA" finished-at="2024-01-20T11:52:18 IST" duration-ms="5037">
+    <groups>
+    </groups>
+    <test started-at="2024-01-20T11:52:13 IST" name="TestA" finished-at="2024-01-20T11:52:18 IST" duration-ms="5037">
+      <class name="suiteA.TestClassA">
+        <test-method signature="testA()[pri:0, instance:suiteA.TestClassA@d4342c2]" started-at="2024-01-20T11:52:13 IST" name="testA" finished-at="2024-01-20T11:52:18 IST" duration-ms="5009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+      </class> <!-- suiteA.TestClassA -->
+    </test> <!-- TestA -->
+    <test started-at="2024-01-20T11:52:13 IST" name="TestAA" finished-at="2024-01-20T11:52:18 IST" duration-ms="5037">
+      <class name="suiteA.TestClassAA">
+        <test-method signature="testAA()[pri:0, instance:suiteA.TestClassAA@29626d54]" started-at="2024-01-20T11:52:13 IST" name="testAA" finished-at="2024-01-20T11:52:18 IST" duration-ms="5009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAA -->
+      </class> <!-- suiteA.TestClassAA -->
+    </test> <!-- TestAA -->
+  </suite> <!-- SuiteA -->
+  <suite started-at="2024-01-20T11:52:18 IST" name="SuiteB" finished-at="2024-01-20T11:52:23 IST" duration-ms="5011">
+    <groups>
+    </groups>
+    <test started-at="2024-01-20T11:52:18 IST" name="TestBB" finished-at="2024-01-20T11:52:23 IST" duration-ms="5006">
+      <class name="suiteB.TestClassBB">
+        <test-method signature="testBB()[pri:0, instance:suiteB.TestClassBB@67a20f67]" started-at="2024-01-20T11:52:18 IST" name="testBB" finished-at="2024-01-20T11:52:23 IST" duration-ms="5002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBB -->
+      </class> <!-- suiteB.TestClassBB -->
+    </test> <!-- TestBB -->
+    <test started-at="2024-01-20T11:52:18 IST" name="TestB" finished-at="2024-01-20T11:52:23 IST" duration-ms="5011">
+      <class name="suiteB.TestClassB">
+        <test-method signature="testB()[pri:0, instance:suiteB.TestClassB@e056f20]" started-at="2024-01-20T11:52:18 IST" name="testB" finished-at="2024-01-20T11:52:23 IST" duration-ms="5002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+      </class> <!-- suiteB.TestClassB -->
+    </test> <!-- TestB -->
+  </suite> <!-- SuiteB -->
+</testng-results>
