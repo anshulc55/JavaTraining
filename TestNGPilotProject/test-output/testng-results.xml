@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-03T22:38:13 IST" name="Suite" finished-at="2024-02-03T22:38:18 IST" duration-ms="4292">
+    <groups>
+      <group name="smoke">
+        <method signature="TestClassC.testC()[pri:0, instance:suiteC.TestClassC@3ba9ad43]" name="testC" class="suiteC.TestClassC"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TestClassC.testC()[pri:0, instance:suiteC.TestClassC@3ba9ad43]" name="testC" class="suiteC.TestClassC"/>
+        <method signature="TestClassCC.testCC()[pri:0, instance:suiteC.TestClassCC@7c0c77c7]" name="testCC" class="suiteC.TestClassCC"/>
+      </group> <!-- sanity -->
+      <group name="browser2">
+        <method signature="TestClassCC.testCC()[pri:0, instance:suiteC.TestClassCC@7c0c77c7]" name="testCC" class="suiteC.TestClassCC"/>
+      </group> <!-- browser2 -->
+      <group name="browser1">
+        <method signature="TestClassC.testC()[pri:0, instance:suiteC.TestClassC@3ba9ad43]" name="testC" class="suiteC.TestClassC"/>
+      </group> <!-- browser1 -->
+    </groups>
+    <test started-at="2024-02-03T22:38:13 IST" name="Test" finished-at="2024-02-03T22:38:18 IST" duration-ms="4292">
+      <class name="suiteC.TestClassCC">
+        <test-method is-config="true" signature="init(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:suiteC.TestClassCC@7c0c77c7]" started-at="2024-02-03T22:38:13 IST" name="init" finished-at="2024-02-03T22:38:13 IST" duration-ms="87" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClassCC.testCC()[pri:0, instance:suiteC.TestClassCC@7c0c77c7] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@60dce7ea]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testCC()[pri:0, instance:suiteC.TestClassCC@7c0c77c7]" started-at="2024-02-03T22:38:13 IST" name="testCC" finished-at="2024-02-03T22:38:16 IST" duration-ms="2012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCC -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteC.TestClassCC@7c0c77c7]" started-at="2024-02-03T22:38:16 IST" name="quit" finished-at="2024-02-03T22:38:16 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- suiteC.TestClassCC -->
+      <class name="suiteC.TestClassC">
+        <test-method signature="testC()[pri:0, instance:suiteC.TestClassC@3ba9ad43]" started-at="2024-02-03T22:38:16 IST" name="testC" finished-at="2024-02-03T22:38:18 IST" duration-ms="2008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method is-config="true" signature="init(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:suiteC.TestClassC@3ba9ad43]" started-at="2024-02-03T22:38:16 IST" name="init" finished-at="2024-02-03T22:38:16 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestClassC.testC()[pri:0, instance:suiteC.TestClassC@3ba9ad43] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@60dce7ea]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteC.TestClassC@3ba9ad43]" started-at="2024-02-03T22:38:18 IST" name="quit" finished-at="2024-02-03T22:38:18 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- suiteC.TestClassC -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

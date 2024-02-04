@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser2" value="chrome"/>
+  <listeners>
+    <listener class-name="listener.CustomListener"/>
+  </listeners>
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="suiteA.TestClassA">
+        <methods>
+          <include name="init"/>
+          <include name="testA" invocation-numbers="0 1"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- suiteA.TestClassA -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

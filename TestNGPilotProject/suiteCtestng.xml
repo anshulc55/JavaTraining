@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<groups>
+		<run>
+			<include name="sanity"></include>
+		</run>
+	</groups>
+
+	<parameter name="browser1" value="chrome"></parameter>
+	<parameter name="browser2" value="IE"></parameter>
+
+	<listeners>
+		<listener class-name="listener.CustomListener" />
+	</listeners>
+
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="suiteC.TestClassCC" />
+			<class name="suiteC.TestClassC" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
