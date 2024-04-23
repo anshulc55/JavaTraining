@@ -1,0 +1,42 @@
+{
+	"testcases": [
+		{
+			"parameternames": [
+				"action"
+			],
+			"executions": [
+				{
+					"runmode": "Yes",
+					"executionname": "Create Portfolio Method",
+					"dataflag": "createnewportfolio",
+					"parametervalues": [
+						"addStock"
+					],
+					"methods": [
+						"doLogin",
+						"createPortfolio"
+					]
+				}
+			]
+		},
+		{
+			"parameternames": [
+				"action"
+			],
+			"executions": [
+				{
+					"runmode": "Yes",
+					"executionname": "Delete Portfolio Method",
+					"dataflag": "deletenewportfolio",
+					"parametervalues": [
+						"addStock"
+					],
+					"methods": [
+						"doLogin",
+						"deletePortfolio"
+					]
+				}
+			]
+		}
+	]
+}

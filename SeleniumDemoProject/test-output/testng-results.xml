@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-12T22:39:56 IST" name="Default suite" finished-at="2024-03-12T22:41:22 IST" duration-ms="85881">
+  <suite started-at="2024-03-17T00:04:51 IST" name="Default suite" finished-at="2024-03-17T00:06:13 IST" duration-ms="82250">
     <groups>
     </groups>
-    <test started-at="2024-03-12T22:39:56 IST" name="Default test" finished-at="2024-03-12T22:41:22 IST" duration-ms="85881">
-      <class name="LiveDemoProject.LoginTestClass">
-        <test-method is-config="true" signature="init()[pri:0, instance:LiveDemoProject.LoginTestClass@418e7838]" started-at="2024-03-12T22:39:56 IST" name="init" finished-at="2024-03-12T22:40:01 IST" duration-ms="4387" status="PASS">
+    <test started-at="2024-03-17T00:04:51 IST" name="Default test" finished-at="2024-03-17T00:06:13 IST" duration-ms="82250">
+      <class name="PilotProject.BookAppointmentOnDemand">
+        <test-method is-config="true" signature="init()[pri:0, instance:PilotProject.BookAppointmentOnDemand@70e8f8e]" started-at="2024-03-17T00:04:51 IST" name="init" finished-at="2024-03-17T00:04:56 IST" duration-ms="5260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="rediffMoneyLoginTest()[pri:0, instance:LiveDemoProject.LoginTestClass@418e7838]" started-at="2024-03-12T22:40:01 IST" name="rediffMoneyLoginTest" finished-at="2024-03-12T22:41:22 IST" duration-ms="81344" status="PASS">
+        <test-method signature="bookAppointmentTest()[pri:0, instance:PilotProject.BookAppointmentOnDemand@70e8f8e]" started-at="2024-03-17T00:04:56 IST" name="bookAppointmentTest" finished-at="2024-03-17T00:06:13 IST" duration-ms="76820" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- rediffMoneyLoginTest -->
-        <test-method is-config="true" signature="finish()[pri:0, instance:LiveDemoProject.LoginTestClass@418e7838]" started-at="2024-03-12T22:41:22 IST" name="finish" finished-at="2024-03-12T22:41:22 IST" duration-ms="133" status="PASS">
+        </test-method> <!-- bookAppointmentTest -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:PilotProject.BookAppointmentOnDemand@70e8f8e]" started-at="2024-03-17T00:06:13 IST" name="finish" finished-at="2024-03-17T00:06:13 IST" duration-ms="154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
-      </class> <!-- LiveDemoProject.LoginTestClass -->
+      </class> <!-- PilotProject.BookAppointmentOnDemand -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

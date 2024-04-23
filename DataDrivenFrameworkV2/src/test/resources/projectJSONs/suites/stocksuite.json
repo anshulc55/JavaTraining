@@ -1,0 +1,74 @@
+{
+	"testcases": [
+		{
+			"parameternames": [
+				"action"
+			],
+			"executions": [
+				{
+					"runmode": "Yes",
+					"executionname": "Add Stocks in Portfolio",
+					"dataflag": "addfreshstock",
+					"parametervalues": [
+						"addStock"
+					],
+					"methods": [
+						"doLogin",
+						"selectPortfolio",
+						"addStockTest",
+						"verifyStockIsPresent",
+						"verifyTransactionHistory"
+					]
+				}
+			]
+		},
+		{
+			"parameternames": [
+				"action"
+			],
+			"executions": [
+				{
+					"runmode": "Yes",
+					"executionname": "Sell Stocks in Portfolio",
+					"dataflag": "sellexistingstock",
+					"parametervalues": [
+						"sellStock"
+					],
+					"methods": [
+						"doLogin",
+						"selectPortfolio",
+						"verifyStockIsPresent",
+						"modifyStock",
+						"verifyStockIsPresent",
+						"verifyStockQuantity",
+						"verifyTransactionHistory"
+					]
+				}
+			]
+		},
+		{
+			"parameternames": [
+				"action"
+			],
+			"executions": [
+				{
+					"runmode": "Yes",
+					"executionname": "Add Stocks in existying Company in Portfolio",
+					"dataflag": "addexistingstock",
+					"parametervalues": [
+						"addStock"
+					],
+					"methods": [
+						"doLogin",
+						"selectPortfolio",
+						"verifyStockIsPresent",
+						"modifyStock",
+						"verifyStockIsPresent",
+						"verifyStockQuantity",
+						"verifyTransactionHistory"
+					]
+				}
+			]
+		}
+	]
+}

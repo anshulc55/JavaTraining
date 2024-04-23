@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Manage Stocks]">
+  <test thread-count="5" name="Sell Stocks in Portfolio(failed)">
+    <parameter name="action" value="sellStock"/>
+    <classes>
+      <class name="testcasesrediffPortfolio.ManageStocksTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="verifyTransactionHistory" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManageStocksTest -->
+    </classes>
+  </test> <!-- Sell Stocks in Portfolio(failed) -->
+  <test thread-count="5" name="Add Stocks in existying Company in Portfolio(failed)">
+    <parameter name="action" value="addStock"/>
+    <classes>
+      <class name="testcasesrediffPortfolio.ManageStocksTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="verifyStockQuantity" invocation-numbers="0"/>
+          <include name="modifyStock" invocation-numbers="0"/>
+          <include name="verifyStockIsPresent" invocation-numbers="0"/>
+          <include name="verifyTransactionHistory" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManageStocksTest -->
+      <class name="testcasesrediffPortfolio.ManagePortfolioTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="selectPortfolio"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManagePortfolioTest -->
+    </classes>
+  </test> <!-- Add Stocks in existying Company in Portfolio(failed) -->
+</suite> <!-- Failed suite [Manage Stocks] -->

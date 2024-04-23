@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listner.MyTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Modify Stock Test : Add Stock(failed)">
+    <parameter name="action" value="addStock"/>
+    <classes>
+      <class name="testcasesrediffPortfolio.ManagePortfolioTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="selectPortfolio"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManagePortfolioTest -->
+      <class name="testcasesrediffPortfolio.ManageStocksTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="verifyStockQuantity" invocation-numbers="0"/>
+          <include name="modifyStock" invocation-numbers="0"/>
+          <include name="verifyStockIsPresent" invocation-numbers="0"/>
+          <include name="verifyTransactionHistory" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManageStocksTest -->
+      <class name="testcasesrediffPortfolio.ManageSessionTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="doLogin"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManageSessionTest -->
+    </classes>
+  </test> <!-- Modify Stock Test : Add Stock(failed) -->
+</suite> <!-- Failed suite [Suite] -->

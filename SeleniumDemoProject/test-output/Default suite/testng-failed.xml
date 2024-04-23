@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LiveDemoProject.LoginTestClass">
+      <class name="PilotProject.BookAppointmentOnDemand">
         <methods>
+          <include name="bookAppointmentTest"/>
           <include name="init"/>
           <include name="finish"/>
-          <include name="rediffMoneyLoginTest"/>
         </methods>
-      </class> <!-- LiveDemoProject.LoginTestClass -->
+      </class> <!-- PilotProject.BookAppointmentOnDemand -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

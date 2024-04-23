@@ -1,0 +1,22 @@
+Generic Keywords:
+openBrowser
+click
+type
+select
+getText
+navigate
+acceptAlert
+dismissAlert
+
+
+Validation Keywords:
+validateTitle
+validateText
+validateElementPresent
+validateElementClickable
+validateElementDisplayed
+
+
+Application Keywords:
+login
+selectDate

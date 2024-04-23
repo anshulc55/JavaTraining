@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Manage Portfolio Suite</th></tr>
+<tr><td><a href="#t0">Create Portfolio Method</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">94,193</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Delete Portfolio Method</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">66,429</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">160,622</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Manage Portfolio Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Create Portfolio Method &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcasesrediffPortfolio.ManagePortfolioTest</td><td><a href="#m0">createPortfolio</a></td><td rowspan="1">1713705267556</td><td rowspan="1">9</td></tr><tr><th colspan="4">Create Portfolio Method &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcasesrediffPortfolio.ManageSessionTest</td><td><a href="#m1">doLogin</a></td><td rowspan="1">1713705173713</td><td rowspan="1">93838</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Delete Portfolio Method &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcasesrediffPortfolio.ManagePortfolioTest</td><td><a href="#m2">deletePortfolio</a></td><td rowspan="1">1713705334100</td><td rowspan="1">5</td></tr><tr><th colspan="4">Delete Portfolio Method &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcasesrediffPortfolio.ManageSessionTest</td><td><a href="#m3">doLogin</a></td><td rowspan="1">1713705267789</td><td rowspan="1">66309</td></tr></tbody>
+</table>
+<h2>Create Portfolio Method</h2><h3 id="m0">testcasesrediffPortfolio.ManagePortfolioTest#createPortfolio</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter captcha}
+  (Session info: chrome=124.0.6367.61): Please enter captcha
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [226343f036eb099e69fd3cc83205d648, findElement {value=createPortfolio, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/rg/b21vyw1s0v7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61957}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61957/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 226343f036eb099e69fd3cc83205d648
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at keywords.GenericKeywords.getElement(GenericKeywords.java:208)
+	at keywords.GenericKeywords.click(GenericKeywords.java:146)
+	at testcasesrediffPortfolio.ManagePortfolioTest.createPortfolio(ManagePortfolioTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at runner.TestNGRunner.run(TestNGRunner.java:45)
+	at runner.JSONRunner.main(JSONRunner.java:104)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcasesrediffPortfolio.ManageSessionTest#doLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Delete Portfolio Method</h2><h3 id="m2">testcasesrediffPortfolio.ManagePortfolioTest#deletePortfolio</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please enter captcha}
+  (Session info: chrome=124.0.6367.61): Please enter captcha
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb3d705f225d402bb14ffbfe8fcf9112, findElement {value=portfolioid, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/rg/b21vyw1s0v7...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62126}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62126/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb3d705f225d402bb14ffbfe8fcf9112
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at keywords.GenericKeywords.getElement(GenericKeywords.java:208)
+	at keywords.GenericKeywords.selectByVisibleText(GenericKeywords.java:167)
+	at testcasesrediffPortfolio.ManagePortfolioTest.deletePortfolio(ManagePortfolioTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at runner.TestNGRunner.run(TestNGRunner.java:45)
+	at runner.JSONRunner.main(JSONRunner.java:104)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcasesrediffPortfolio.ManageSessionTest#doLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="listner.MyTestNGListener"></listener>
+	</listeners>
+
+	<test name="Add Stock Test">
+		<parameter name="action" value="addStock"></parameter>
+		<classes>
+			<class name="testcasesrediffPortfolio.ManageSessionTest">
+				<methods>
+					<include name="doLogin" />
+				</methods>
+			</class>
+			<class name="testcasesrediffPortfolio.ManagePortfolioTest">
+				<methods>
+					<include name="selectPortfolio" />
+				</methods>
+			</class>
+			<class name="testcasesrediffPortfolio.ManageStocksTest">
+				<methods>
+					<include name="addStockTest" />
+					<include name="verifyStockIsPresent" />
+					<include name="verifyTransactionHistory" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<test name="Modify Stock Test : Sell Stock">
+		<parameter name="action" value="sellStock"></parameter>
+		<classes>
+			<class name="testcasesrediffPortfolio.ManageSessionTest">
+				<methods>
+					<include name="doLogin" />
+				</methods>
+			</class>
+			<class name="testcasesrediffPortfolio.ManagePortfolioTest">
+				<methods>
+					<include name="selectPortfolio" />
+				</methods>
+			</class>
+			<class name="testcasesrediffPortfolio.ManageStocksTest">
+				<methods>
+					<include name="verifyStockIsPresent" />
+					<include name="modifyStock" />
+					<include name="verifyStockIsPresent" />
+					<include name="verifyStockQuantity" />
+					<include name="verifyTransactionHistory" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Modify Stock Test : Add Stock">
+		<parameter name="action" value="addStock"></parameter>
+		<classes>
+			<class name="testcasesrediffPortfolio.ManageSessionTest">
+				<methods>
+					<include name="doLogin" />
+				</methods>
+			</class>
+			<class name="testcasesrediffPortfolio.ManagePortfolioTest">
+				<methods>
+					<include name="selectPortfolio" />
+				</methods>
+			</class>
+			<class name="testcasesrediffPortfolio.ManageStocksTest">
+				<methods>
+					<include name="verifyStockIsPresent" />
+					<include name="modifyStock" />
+					<include name="verifyStockIsPresent" />
+					<include name="verifyStockQuantity" />
+					<include name="verifyTransactionHistory" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 
+
