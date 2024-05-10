@@ -1,5 +1,6 @@
 package testcasesrediffPortfolio;
 
+import org.json.simple.JSONObject;
 import org.testng.ITestContext;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -11,10 +12,11 @@ public class ManageStocksTest extends BaseTest {
 	@Parameters({ "action" })
 	@Test
 	public void modifyStock(String action, ITestContext context) {
-		String companyName = "YES Bank";
-		String modifiedQuantity = "100";
-		String stockPrice = "150";
-		String selectionDate = "17-03-2023";
+		JSONObject data = (JSONObject) context.getAttribute("testData");
+		String companyName = (String) data.get("companyName");
+		String modifiedQuantity = (String) data.get("stockQuantity");
+		String stockPrice = (String) data.get("stockPrice");
+		String selectionDate = (String) data.get("selectionDate");
 
 		app.logInfo("Modifying Quantity : " + modifiedQuantity + " of Stock :: " + companyName);
 
@@ -40,8 +42,9 @@ public class ManageStocksTest extends BaseTest {
 	@Parameters({ "action" })
 	@Test
 	public void verifyStockQuantity(String action, ITestContext context) {
-		String companyName = "YES Bank";
-		int modifiedQuantity = 100;
+		JSONObject data = (JSONObject) context.getAttribute("testData");
+		String companyName = (String) data.get("companyName");
+		int modifiedQuantity = Integer.parseInt((String)data.get("stockQuantity"));
 		int expectedModifiedQuantity = 0;
 
 		app.logInfo("Verify Stock Quantity After Action :: " + action);
@@ -69,8 +72,9 @@ public class ManageStocksTest extends BaseTest {
 	@Parameters({ "action" })
 	@Test
 	public void verifyTransactionHistory(String action, ITestContext context) {
-		String companyName = "YES Bank";
-		String modifiedQuantity = "100";
+		JSONObject data = (JSONObject) context.getAttribute("testData");
+		String companyName = (String) data.get("companyName");
+		String modifiedQuantity = (String) data.get("stockQuantity");
 
 		app.logInfo("Verify Stock Transaction History After Operation :: " + action);
 		app.openTrasactionHistory(companyName);
@@ -89,10 +93,11 @@ public class ManageStocksTest extends BaseTest {
 
 	@Test
 	public void addStockTest(ITestContext context) {
-		String companyName = "YES Bank";
-		String selectionDate = "10-07-2022";
-		String stockQuantity = "100";
-		String stockPrice = "100";
+		JSONObject data = (JSONObject) context.getAttribute("testData");
+		String companyName = (String) data.get("companyName");
+		String stockQuantity = (String) data.get("stockQuantity");
+		String stockPrice = (String) data.get("stockPrice");
+		String selectionDate = (String) data.get("selectionDate");
 
 		app.logInfo("Selecting Stocks in Portfolio");
 		
@@ -116,7 +121,8 @@ public class ManageStocksTest extends BaseTest {
 
 	@Test
 	public void verifyStockIsPresent(ITestContext context) {
-		String companyName = "YES Bank";
+		JSONObject data = (JSONObject) context.getAttribute("testData");
+		String companyName = (String) data.get("companyName");
 
 		app.logInfo("Verifying Added Stock in Portfolio...");
 		int rowNum = app.getRowNumWithCellData("stockTable_id", companyName);

@@ -1,13 +1,14 @@
 package testcasesrediffPortfolio;
 
 
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
 import testbase.BaseTest;
 
 public class ManageSessionTest extends BaseTest{
 	
 	@Test
-	public void doLogin() throws InterruptedException {
+	public void doLogin(ITestContext context) throws InterruptedException {
 		app.logInfo("Login Application");
 		
 		app.openBrowser("browser_name");
@@ -19,12 +20,11 @@ public class ManageSessionTest extends BaseTest{
 		//app.enterCaptcha("captcha_id");
 		app.wait(30);
 		app.clickButton("submitBtn_id");
-		app.reportAll();
 	}
 
 	
 	@Test
-	public void doLogOut() {
+	public void doLogOut(ITestContext context) {
 		System.out.println("***** LogOut Application ******");
 		//ApplicationKeywords app = new ApplicationKeywords();
 	}

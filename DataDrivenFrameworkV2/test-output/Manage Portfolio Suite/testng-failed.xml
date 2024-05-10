@@ -1,22 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Manage Portfolio Suite]">
-  <test thread-count="5" name="Create Portfolio Method(failed)">
+  <test thread-count="5" name="Manage Portfolio Suite : Create Portfolio Method 1(failed)">
+    <parameter name="dataSetID" value="0"/>
     <parameter name="action" value="addStock"/>
+    <parameter name="testdatajsonfile" value="/Users/anshul/java_selenium/DataDrivenFrameworkV2/src/test/resources/projectJSONs/XLS_Data/TestExcelData.xlsx"/>
+    <parameter name="dataflag" value="createnewportfolio"/>
+    <parameter name="suiteName" value="Manage Portfolio Suite"/>
     <classes>
       <class name="testcasesrediffPortfolio.ManagePortfolioTest">
         <methods>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
           <include name="createPortfolio"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManagePortfolioTest -->
+      <class name="testcasesrediffPortfolio.ManageSessionTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="doLogin"/>
           <include name="afterMethod"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- testcasesrediffPortfolio.ManagePortfolioTest -->
+      </class> <!-- testcasesrediffPortfolio.ManageSessionTest -->
     </classes>
-  </test> <!-- Create Portfolio Method(failed) -->
-  <test thread-count="5" name="Delete Portfolio Method(failed)">
+  </test> <!-- Manage Portfolio Suite : Create Portfolio Method 1(failed) -->
+  <test thread-count="5" name="Manage Portfolio Suite : Create Portfolio Method 3(failed)">
+    <parameter name="dataSetID" value="2"/>
     <parameter name="action" value="addStock"/>
+    <parameter name="testdatajsonfile" value="/Users/anshul/java_selenium/DataDrivenFrameworkV2/src/test/resources/projectJSONs/XLS_Data/TestExcelData.xlsx"/>
+    <parameter name="dataflag" value="createnewportfolio"/>
+    <parameter name="suiteName" value="Manage Portfolio Suite"/>
+    <classes>
+      <class name="testcasesrediffPortfolio.ManagePortfolioTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="createPortfolio"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManagePortfolioTest -->
+      <class name="testcasesrediffPortfolio.ManageSessionTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="doLogin"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManageSessionTest -->
+    </classes>
+  </test> <!-- Manage Portfolio Suite : Create Portfolio Method 3(failed) -->
+  <test thread-count="5" name="Manage Portfolio Suite : Delete Portfolio Method 1(failed)">
+    <parameter name="dataSetID" value="0"/>
+    <parameter name="action" value="addStock"/>
+    <parameter name="testdatajsonfile" value="/Users/anshul/java_selenium/DataDrivenFrameworkV2/src/test/resources/projectJSONs/XLS_Data/TestExcelData.xlsx"/>
+    <parameter name="dataflag" value="deletenewportfolio"/>
+    <parameter name="suiteName" value="Manage Portfolio Suite"/>
+    <classes>
+      <class name="testcasesrediffPortfolio.ManagePortfolioTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="deletePortfolio"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManagePortfolioTest -->
+      <class name="testcasesrediffPortfolio.ManageSessionTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="doLogin"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManageSessionTest -->
+    </classes>
+  </test> <!-- Manage Portfolio Suite : Delete Portfolio Method 1(failed) -->
+  <test thread-count="5" name="Manage Portfolio Suite : Delete Portfolio Method 2(failed)">
+    <parameter name="dataSetID" value="1"/>
+    <parameter name="action" value="addStock"/>
+    <parameter name="testdatajsonfile" value="/Users/anshul/java_selenium/DataDrivenFrameworkV2/src/test/resources/projectJSONs/XLS_Data/TestExcelData.xlsx"/>
+    <parameter name="dataflag" value="deletenewportfolio"/>
+    <parameter name="suiteName" value="Manage Portfolio Suite"/>
     <classes>
       <class name="testcasesrediffPortfolio.ManagePortfolioTest">
         <methods>
@@ -27,6 +98,42 @@
           <include name="beforeTest"/>
         </methods>
       </class> <!-- testcasesrediffPortfolio.ManagePortfolioTest -->
+      <class name="testcasesrediffPortfolio.ManageSessionTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="doLogin"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManageSessionTest -->
     </classes>
-  </test> <!-- Delete Portfolio Method(failed) -->
+  </test> <!-- Manage Portfolio Suite : Delete Portfolio Method 2(failed) -->
+  <test thread-count="5" name="Manage Portfolio Suite : Delete Portfolio Method 3(failed)">
+    <parameter name="dataSetID" value="2"/>
+    <parameter name="action" value="addStock"/>
+    <parameter name="testdatajsonfile" value="/Users/anshul/java_selenium/DataDrivenFrameworkV2/src/test/resources/projectJSONs/XLS_Data/TestExcelData.xlsx"/>
+    <parameter name="dataflag" value="deletenewportfolio"/>
+    <parameter name="suiteName" value="Manage Portfolio Suite"/>
+    <classes>
+      <class name="testcasesrediffPortfolio.ManagePortfolioTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="deletePortfolio"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManagePortfolioTest -->
+      <class name="testcasesrediffPortfolio.ManageSessionTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="doLogin"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testcasesrediffPortfolio.ManageSessionTest -->
+    </classes>
+  </test> <!-- Manage Portfolio Suite : Delete Portfolio Method 3(failed) -->
 </suite> <!-- Failed suite [Manage Portfolio Suite] -->

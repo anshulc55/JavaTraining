@@ -13,6 +13,42 @@ import org.json.simple.parser.ParseException;
 
 public class DataUtil {
 
+	public int getDataSets(String filePath, String dataflag) throws FileNotFoundException, IOException, ParseException {
+		JSONParser parser = new JSONParser();
+		JSONObject json = (JSONObject) parser.parse(new FileReader(filePath));
+
+		JSONArray testDataSet = (JSONArray) json.get("testdata");
+		for (int dataSetID = 0; dataSetID < testDataSet.size(); dataSetID++) {
+			JSONObject testData = (JSONObject) testDataSet.get(dataSetID);
+			String dataFlag = (String) testData.get("flag");
+
+			if (dataFlag.equalsIgnoreCase(dataflag)) {
+				JSONArray dataSets = (JSONArray) testData.get("data");
+				return dataSets.size();
+			}
+		}
+		return -1;
+	}
+
+	public JSONObject getTestData(String filePath, String dataflag, int iterationNumber)
+			throws FileNotFoundException, IOException, ParseException {
+		JSONParser parser = new JSONParser();
+		JSONObject json = (JSONObject) parser.parse(new FileReader(filePath));
+
+		JSONArray testDataSet = (JSONArray) json.get("testdata");
+		for (int dataSetID = 0; dataSetID < testDataSet.size(); dataSetID++) {
+			JSONObject testData = (JSONObject) testDataSet.get(dataSetID);
+			String dataFlag = (String) testData.get("flag");
+
+			if (dataFlag.equalsIgnoreCase(dataflag)) {
+				JSONArray dataSets = (JSONArray) testData.get("data");
+				JSONObject data = (JSONObject) dataSets.get(iterationNumber);
+				return data;
+			}
+		}
+		return null;
+	}
+
 	public Map<String, String> loadClassMethods() throws FileNotFoundException, IOException, ParseException {
 		Map<String, String> classMethodMap = new HashMap<String, String>();
 

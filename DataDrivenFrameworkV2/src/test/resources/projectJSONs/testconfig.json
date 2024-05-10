@@ -9,16 +9,16 @@
 			"name": "Manage Portfolio Suite",
 			"runmode": "Yes",
 			"paralleltests": "No",
-			"testdatajsonfile": "",
-			"testdataxlsfile": "",
+			"testdatajsonfile": "testJSONData/portfolioData.json",
+			"testdataxlsfile": "XLS_Data/TestExcelData.xlsx",
 			"suitefilename": "suites/portfoliosuite.json"
 		},
 		{
 			"name": "Manage Stocks",
 			"runmode": "No",
 			"paralleltests": "No",
-			"testdatajsonfile": "",
-			"testdataxlsfile": "",
+			"testdatajsonfile": "testJSONData/stocksData.json",
+			"testdataxlsfile": "XLS_Data/TestExcelData.xlsx",
 			"suitefilename": "suites/stocksuite.json"
 		}
 	]

@@ -9,11 +9,11 @@
 				},
 				{
 					"portfolioname": "port200",
-					"runmode": "Yes"
+					"runmode": "No"
 				},
 				{
 					"portfolioname": "port300",
-					"runmode": "Yes"
+					"runmode": "No"
 				}
 			]
 		},
@@ -22,15 +22,15 @@
 			"data": [
 				{
 					"portfolioname": "port100",
-					"runmode": "Yes"
+					"runmode": "No"
 				},
 				{
 					"portfolioname": "port200",
-					"runmode": "Yes"
+					"runmode": "No"
 				},
 				{
 					"portfolioname": "port300",
-					"runmode": "Yes"
+					"runmode": "No"
 				}
 			]
 		}

@@ -1,5 +1,7 @@
 package testcasesrediffPortfolio;
 
+import org.json.simple.JSONObject;
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
 import testbase.BaseTest;
 
@@ -7,8 +9,9 @@ import testbase.BaseTest;
 public class ManagePortfolioTest extends BaseTest{
 	
 	@Test
-	public void createPortfolio() {
-		String portfolioName = "MyPortfolio_9999";
+	public void createPortfolio(ITestContext context) {
+		JSONObject data = (JSONObject) context.getAttribute("testData");
+		String portfolioName = (String) data.get("portfolioname");
 		
 		app.logInfo("Creating Portfolio :: " + portfolioName);
 		app.click("createPortfolio_id");
@@ -20,8 +23,9 @@ public class ManagePortfolioTest extends BaseTest{
 	}
 
 	@Test
-	public void deletePortfolio() {
-		String portfolioName = "MyPortfolio_9999";
+	public void deletePortfolio(ITestContext context) {
+		JSONObject data = (JSONObject) context.getAttribute("testData");
+		String portfolioName = (String) data.get("portfolioname");
 		
 		app.logInfo("Deleting Porfolio :: " + portfolioName);
 		app.selectByVisibleText("portfolio_dropdown_id", portfolioName);
@@ -34,7 +38,7 @@ public class ManagePortfolioTest extends BaseTest{
 	}
 	
 	@Test
-	public void selectPortfolio() {
+	public void selectPortfolio(ITestContext context) {
 		
 		String portfolioName = "Portfolio50";
 		
