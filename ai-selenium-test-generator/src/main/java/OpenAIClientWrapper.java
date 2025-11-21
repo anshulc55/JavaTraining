@@ -74,6 +74,48 @@ public class OpenAIClientWrapper {
 
 		return code.trim();
 	}
+	
+	
+	// Generates Java source code for a Selenium + TestNG + Extent Report based on the given
+	// user story.
+	public static String generateCodeFromStoryWithReport(String userStory) throws IOException {
+		if (userStory == null || userStory.isBlank()) {
+			throw new IllegalArgumentException("userStory must not be blank");
+		}
+		
+		initClientIfNeeded();
+
+		// Construct the system prompt
+        String systemPrompt = """
+                You are an expert Test Automation Engineer. Generate a clean, maintainable Selenium + TestNG test class in Java
+                that includes full Extent Reports integration. 
+                Requirements:
+                - Return ONLY valid Java source code (no explanations, no markdown).
+                - Include package, all necessary imports, and a single public class.
+                - Use ChromeDriver in @BeforeClass and quit driver in @AfterClass.
+                - Initialize ExtentReports (ExtentSparkReporter) in @BeforeClass and call extent.flush() in @AfterClass.
+                - Create an ExtentTest for the test and log each logical step using test.info(...), test.pass(...), and test.fail(...).
+                - On exceptions, capture a screenshot, save it under a reports/screenshots folder, and attach it to the report using MediaEntityBuilder.
+                - Implement the test steps derived from the provided input.
+                - Use clear, descriptive class and method names. Keep one @Test method per logical test-case.
+                - Include appropriate TestNG assertions (Assert.assertTrue / Assert.assertFalse / Assert.assertEquals).
+                - Do not include any external library setup instructions or extra commentary — only the Java test class source.
+                """;
+
+		// Create chat completion parameters
+		ChatCompletionCreateParams params = ChatCompletionCreateParams.builder().model(ChatModel.GPT_5)
+				.addSystemMessage(systemPrompt).addUserMessage("User Story / Acceptance Criteria:\n\n" + userStory)
+				.build();
+
+		// Call the API
+		ChatCompletion result = client.chat().completions().create(params);
+
+		// Extract content
+		String code = result.choices().get(0).message().content()
+				.orElseThrow(() -> new IOException("No content in OpenAI response"));
+
+		return code.trim();
+	}
 
 	// Saves the generated code to a .java file.
 	public static void saveToFile(String code, String fileName) throws IOException {
