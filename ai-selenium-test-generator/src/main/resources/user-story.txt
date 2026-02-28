@@ -1,0 +1,14 @@
+As a registered user,
+I want to log in to the OrangeHRM demo site with valid credentials
+so that I can access my dashboard and verify my personal information.
+
+Acceptance Criteria:
+- Navigate to https://opensource-demo.orangehrmlive.com/
+- Verify the Page Title is "OrangeHRM"
+- Enter valid username and password (username: Admin, password: admin123)
+- Verify successful login by checking that the dashboard page loads
+- Click on the "My Info" menu item in the sidebar
+- Verify that the "Personal Details" section is displayed
+- Read the value of the "First Name" field
+- Print the "First Name" value in the console
+- Assert that the "First Name" value is not empty

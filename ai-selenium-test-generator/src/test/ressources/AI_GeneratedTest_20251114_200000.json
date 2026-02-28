@@ -1,0 +1,172 @@
+[
+  {
+    "testCaseName": "Login - Valid Credentials (Verify Dashboard Visibility)",
+    "description": "Verify that a registered user can successfully log in to OrangeHRM using valid credentials and see the Dashboard.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "action": "Navigate",
+        "target": "https://opensource-demo.orangehrmlive.com/",
+        "inputValues": null,
+        "expectedValidation": "Login page loads successfully."
+      },
+      {
+        "stepNumber": 2,
+        "action": "Verify Page Title",
+        "target": "Browser Title",
+        "inputValues": null,
+        "expectedValidation": "Title equals 'OrangeHRM'."
+      },
+      {
+        "stepNumber": 3,
+        "action": "Enter Text",
+        "target": "Username field",
+        "inputValues": {
+          "username": "Admin"
+        },
+        "expectedValidation": "Username value is entered."
+      },
+      {
+        "stepNumber": 4,
+        "action": "Enter Text",
+        "target": "Password field",
+        "inputValues": {
+          "password": "admin123"
+        },
+        "expectedValidation": "Password value is entered."
+      },
+      {
+        "stepNumber": 5,
+        "action": "Click",
+        "target": "Login button",
+        "inputValues": null,
+        "expectedValidation": "Login request is submitted."
+      },
+      {
+        "stepNumber": 6,
+        "action": "Verify Element Visibility",
+        "target": "Dashboard header",
+        "inputValues": null,
+        "expectedValidation": "Dashboard page is displayed (e.g., heading 'Dashboard' visible and/or URL contains '/dashboard')."
+      }
+    ]
+  },
+  {
+    "testCaseName": "Login - Valid Credentials (Verify URL and User Menu)",
+    "description": "Verify successful login with valid credentials by confirming Dashboard access via URL and presence of user profile/menu.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "action": "Navigate",
+        "target": "https://opensource-demo.orangehrmlive.com/",
+        "inputValues": null,
+        "expectedValidation": "Login page loads successfully."
+      },
+      {
+        "stepNumber": 2,
+        "action": "Verify Page Title",
+        "target": "Browser Title",
+        "inputValues": null,
+        "expectedValidation": "Title equals 'OrangeHRM'."
+      },
+      {
+        "stepNumber": 3,
+        "action": "Enter Text",
+        "target": "Username field",
+        "inputValues": {
+          "username": "Admin"
+        },
+        "expectedValidation": "Username value is entered."
+      },
+      {
+        "stepNumber": 4,
+        "action": "Enter Text",
+        "target": "Password field",
+        "inputValues": {
+          "password": "admin123"
+        },
+        "expectedValidation": "Password value is entered."
+      },
+      {
+        "stepNumber": 5,
+        "action": "Click",
+        "target": "Login button",
+        "inputValues": null,
+        "expectedValidation": "Login request is submitted."
+      },
+      {
+        "stepNumber": 6,
+        "action": "Verify URL",
+        "target": "Browser Address Bar",
+        "inputValues": null,
+        "expectedValidation": "URL contains '/dashboard'."
+      },
+      {
+        "stepNumber": 7,
+        "action": "Verify Element Visibility",
+        "target": "User profile/avatar menu (top-right)",
+        "inputValues": null,
+        "expectedValidation": "User profile/avatar menu is visible, indicating authenticated session."
+      }
+    ]
+  },
+  {
+    "testCaseName": "Login - Invalid Credentials (Negative)",
+    "description": "Verify that login fails with an invalid password and the user remains on the login page with an appropriate error message.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "action": "Navigate",
+        "target": "https://opensource-demo.orangehrmlive.com/",
+        "inputValues": null,
+        "expectedValidation": "Login page loads successfully."
+      },
+      {
+        "stepNumber": 2,
+        "action": "Verify Page Title",
+        "target": "Browser Title",
+        "inputValues": null,
+        "expectedValidation": "Title equals 'OrangeHRM'."
+      },
+      {
+        "stepNumber": 3,
+        "action": "Enter Text",
+        "target": "Username field",
+        "inputValues": {
+          "username": "Admin"
+        },
+        "expectedValidation": "Username value is entered."
+      },
+      {
+        "stepNumber": 4,
+        "action": "Enter Text",
+        "target": "Password field",
+        "inputValues": {
+          "password": "wrongpass"
+        },
+        "expectedValidation": "Password value is entered."
+      },
+      {
+        "stepNumber": 5,
+        "action": "Click",
+        "target": "Login button",
+        "inputValues": null,
+        "expectedValidation": "Login request is submitted."
+      },
+      {
+        "stepNumber": 6,
+        "action": "Verify Error Message",
+        "target": "Login error notification/message",
+        "inputValues": null,
+        "expectedValidation": "Error message 'Invalid credentials' is displayed."
+      },
+      {
+        "stepNumber": 7,
+        "action": "Verify Stay on Page",
+        "target": "Login page",
+        "inputValues": null,
+        "expectedValidation": "Still on login page (e.g., URL contains '/auth' or login form visible). Dashboard is not visible."
+      }
+    ]
+  }
+]

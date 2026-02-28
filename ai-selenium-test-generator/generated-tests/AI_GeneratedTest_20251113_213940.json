@@ -1,0 +1,57 @@
+{
+  "testCaseName": "Verify Upcoming Anniversaries panel on Buzz in OrangeHRM Demo",
+  "description": "Open the OrangeHRM demo site, log in, navigate to the Buzz section, verify the 'Upcoming Anniversaries' panel is visible, and print the list of people with upcoming anniversaries.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "action": "Navigate to URL",
+      "target": "https://opensource-demo.orangehrmlive.com/",
+      "inputs": {
+        "url": "https://opensource-demo.orangehrmlive.com/"
+      },
+      "expected": "OrangeHRM login page is displayed with username and password fields visible."
+    },
+    {
+      "stepNumber": 2,
+      "action": "Enter text",
+      "target": "Username input field (name='username')",
+      "inputs": {
+        "text": "Admin"
+      },
+      "expected": "Username field contains the text 'Admin'."
+    },
+    {
+      "stepNumber": 3,
+      "action": "Enter text (secure)",
+      "target": "Password input field (name='password')",
+      "inputs": {
+        "text": "admin123"
+      },
+      "expected": "Password field is populated (masked) without validation errors."
+    },
+    {
+      "stepNumber": 4,
+      "action": "Click",
+      "target": "Login button (type='submit')",
+      "expected": "User is logged in and the Dashboard/Home page is displayed; left navigation menu is visible and contains the 'Buzz' menu item."
+    },
+    {
+      "stepNumber": 5,
+      "action": "Click",
+      "target": "Left navigation menu item with visible text 'Buzz'",
+      "expected": "Buzz page loads successfully. Buzz page header or content specific to Buzz is visible."
+    },
+    {
+      "stepNumber": 6,
+      "action": "Verify visibility",
+      "target": "Panel with header/title text 'Upcoming Anniversaries' on the Buzz page",
+      "expected": "'Upcoming Anniversaries' panel is present in the DOM and visible to the user."
+    },
+    {
+      "stepNumber": 7,
+      "action": "Extract and print list items",
+      "target": "Employee name elements within the 'Upcoming Anniversaries' panel (e.g., list items under the panel)",
+      "expected": "The names of people with upcoming anniversaries are captured and printed to the test logs. If no entries are present, print 'No upcoming anniversaries'."
+    }
+  ]
+}

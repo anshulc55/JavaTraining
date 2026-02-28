@@ -1,0 +1,147 @@
+{
+  "testCases": [
+    {
+      "testCaseName": "Verify Upcoming Anniversaries panel is visible on Buzz after valid login",
+      "description": "Open OrangeHRM demo site, log in with valid credentials, navigate to Buzz, verify the 'Upcoming Anniversaries' panel is displayed, and print the list of people shown.",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "action": "Open URL in a browser",
+          "target": "https://opensource-demo.orangehrmlive.com/",
+          "inputValues": null,
+          "expectedValidations": [
+            "Login page is displayed",
+            "Username and Password input fields are visible",
+            "Login button is visible"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "action": "Enter username",
+          "target": "Login page - Username field",
+          "inputValues": {
+            "username": "Admin"
+          },
+          "expectedValidations": [
+            "Username field contains 'Admin'"
+          ]
+        },
+        {
+          "stepNumber": 3,
+          "action": "Enter password",
+          "target": "Login page - Password field",
+          "inputValues": {
+            "password": "admin123"
+          },
+          "expectedValidations": [
+            "Password field is populated (masked)"
+          ]
+        },
+        {
+          "stepNumber": 4,
+          "action": "Click the Login button",
+          "target": "Login page - Login button",
+          "inputValues": null,
+          "expectedValidations": [
+            "User is authenticated and navigated to the application (e.g., Dashboard/Home)",
+            "Main navigation sidebar is visible",
+            "'Buzz' menu item is present"
+          ]
+        },
+        {
+          "stepNumber": 5,
+          "action": "Navigate to Buzz",
+          "target": "Main navigation - 'Buzz' menu item",
+          "inputValues": null,
+          "expectedValidations": [
+            "Buzz page loads successfully",
+            "Buzz page header or identifier is visible"
+          ]
+        },
+        {
+          "stepNumber": 6,
+          "action": "Verify the 'Upcoming Anniversaries' panel visibility",
+          "target": "Buzz page - 'Upcoming Anniversaries' panel",
+          "inputValues": null,
+          "expectedValidations": [
+            "'Upcoming Anniversaries' panel is present in the Buzz page layout",
+            "Panel title text equals 'Upcoming Anniversaries'",
+            "Panel is visible (not collapsed or hidden)"
+          ]
+        },
+        {
+          "stepNumber": 7,
+          "action": "Capture and print the list of people with upcoming anniversaries",
+          "target": "Buzz page - 'Upcoming Anniversaries' panel - list items (names)",
+          "inputValues": null,
+          "expectedValidations": [
+            "All displayed names within the 'Upcoming Anniversaries' panel are retrieved",
+            "Names are printed/logged in the test output in display order",
+            "If no names are present, print/log 'No upcoming anniversaries'"
+          ]
+        }
+      ]
+    },
+    {
+      "testCaseName": "Negative - Invalid login prevents access to Buzz and Upcoming Anniversaries panel",
+      "description": "Attempt to log in with invalid credentials and verify that access to Buzz (and the 'Upcoming Anniversaries' panel) is not granted.",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "action": "Open URL in a browser",
+          "target": "https://opensource-demo.orangehrmlive.com/",
+          "inputValues": null,
+          "expectedValidations": [
+            "Login page is displayed",
+            "Username and Password input fields are visible",
+            "Login button is visible"
+          ]
+        },
+        {
+          "stepNumber": 2,
+          "action": "Enter username",
+          "target": "Login page - Username field",
+          "inputValues": {
+            "username": "Admin"
+          },
+          "expectedValidations": [
+            "Username field contains 'Admin'"
+          ]
+        },
+        {
+          "stepNumber": 3,
+          "action": "Enter invalid password",
+          "target": "Login page - Password field",
+          "inputValues": {
+            "password": "wrongpass"
+          },
+          "expectedValidations": [
+            "Password field is populated (masked)"
+          ]
+        },
+        {
+          "stepNumber": 4,
+          "action": "Click the Login button",
+          "target": "Login page - Login button",
+          "inputValues": null,
+          "expectedValidations": [
+            "Login remains on the Login page",
+            "Error message 'Invalid credentials' is displayed",
+            "Main navigation sidebar is not available"
+          ]
+        },
+        {
+          "stepNumber": 5,
+          "action": "Verify Buzz and 'Upcoming Anniversaries' are not accessible",
+          "target": "Application navigation and content area",
+          "inputValues": null,
+          "expectedValidations": [
+            "'Buzz' menu item is not accessible when not authenticated",
+            "'Upcoming Anniversaries' panel is not displayed",
+            "User cannot navigate to the Buzz page without a valid session"
+          ]
+        }
+      ]
+    }
+  ]
+}

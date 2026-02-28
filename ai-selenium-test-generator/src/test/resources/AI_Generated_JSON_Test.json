@@ -1,0 +1,83 @@
+{
+  "testCaseName": "Login and Verify Personal Information on OrangeHRM Demo",
+  "description": "Validate that a registered user can log in to the OrangeHRM demo site, navigate to My Info, and verify that the Personal Details section displays a non-empty First Name.",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "action": "Navigate to URL",
+      "target": "https://opensource-demo.orangehrmlive.com/",
+      "input": null,
+      "expectedValidation": "Login page loads successfully (username and password fields are present)."
+    },
+    {
+      "stepNumber": 2,
+      "action": "Verify page title",
+      "target": "Browser Title",
+      "input": null,
+      "expectedValidation": "Title equals 'OrangeHRM'."
+    },
+    {
+      "stepNumber": 3,
+      "action": "Enter text",
+      "target": "Username field (CSS: input[name='username'])",
+      "input": "Admin",
+      "expectedValidation": "Username field contains 'Admin'."
+    },
+    {
+      "stepNumber": 4,
+      "action": "Enter text",
+      "target": "Password field (CSS: input[name='password'])",
+      "input": "admin123",
+      "expectedValidation": "Password field is populated (value masked)."
+    },
+    {
+      "stepNumber": 5,
+      "action": "Click",
+      "target": "Login button (CSS: button[type='submit'])",
+      "input": null,
+      "expectedValidation": "User is authenticated and navigated away from login page."
+    },
+    {
+      "stepNumber": 6,
+      "action": "Verify element visible",
+      "target": "Dashboard header (CSS: header h6, text equals 'Dashboard')",
+      "input": null,
+      "expectedValidation": "Dashboard page is displayed (header 'Dashboard' visible; URL may contain '/dashboard')."
+    },
+    {
+      "stepNumber": 7,
+      "action": "Click",
+      "target": "Sidebar menu item 'My Info' (e.g., XPath: //span[normalize-space()='My Info'])",
+      "input": null,
+      "expectedValidation": "Navigation to 'My Info' page initiated."
+    },
+    {
+      "stepNumber": 8,
+      "action": "Verify element visible",
+      "target": "Section header 'Personal Details' (CSS: h6, text equals 'Personal Details')",
+      "input": null,
+      "expectedValidation": "'Personal Details' section is displayed."
+    },
+    {
+      "stepNumber": 9,
+      "action": "Read/Get value",
+      "target": "First Name field (CSS: input[name='firstName'])",
+      "input": null,
+      "expectedValidation": "Capture the current value and store it as variable 'firstNameValue'."
+    },
+    {
+      "stepNumber": 10,
+      "action": "Print/Log",
+      "target": "Variable 'firstNameValue'",
+      "input": null,
+      "expectedValidation": "The value of 'firstNameValue' is printed to the console/log."
+    },
+    {
+      "stepNumber": 11,
+      "action": "Assert Not Empty",
+      "target": "Variable 'firstNameValue'",
+      "input": null,
+      "expectedValidation": "'firstNameValue' is not empty (length > 0)."
+    }
+  ]
+}
